@@ -1,0 +1,67 @@
+/* Скидання стилів */
+@import url("reset.css"); 
+p {
+		color: blueviolet;
+	}
+*{
+	color: rgb(40, 179, 160);
+}
+h3{
+	color: aqua;
+}
+.subtitle03{
+	color: chocolate;
+}
+[href="#selectors"] {
+	color: rgb(121, 121, 8) ;
+}
+[href="#main-article"] {
+	color: rgb(226, 43, 43) ;}
+
+[href="#links"]{ color: black ;}
+	
+
+#some-id{
+	color: rgba(16, 55, 212, 0.331)
+	;
+}
+[class*="sub"]{
+	color: yellow;
+}
+
+div { 
+	color: greenyellow;
+}
+.text{
+	color: red;
+	
+}
+/* div,
+p {
+	color: red
+} */
+ .article p{
+	color: lightpink;
+	
+} 
+
+.more > p {
+	color: rgb(250, 210, 221);
+}
+.tilda ~ p {
+	color: lightskyblue;
+}
+.plus + p {	color: coral;}
+#main-article {color: purple;}
+
+
+span,
+mark {
+	color: lightskyblue;
+}
+.second_point span{color: red;}
+.point P {color: chocolate;}
+.third_point > p {color: blue ;}
+h3 + p {	color: brown;}
+.label + p {color: black;}
+[href*="wiki"] {color: red;}
