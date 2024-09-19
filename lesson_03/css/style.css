@@ -16,14 +16,15 @@ h3{
 	color: rgb(121, 121, 8) ;
 }
 [href="#main-article"] {
-	color: rgb(226, 43, 43) ;}
+	color: rgb(226, 43, 43) ;
+}
 
-[href="#links"]{ color: black ;}
+[href="#links"]{ color: black ;
+	       }
 	
 
 #some-id{
-	color: rgba(16, 55, 212, 0.331)
-	;
+	color: rgba(16, 55, 212, 0.331);
 }
 [class*="sub"]{
 	color: yellow;
@@ -51,17 +52,33 @@ p {
 .tilda ~ p {
 	color: lightskyblue;
 }
-.plus + p {	color: coral;}
-#main-article {color: purple;}
+.plus + p {	
+	color: coral;
+}
+#main-article {
+	color: purple;
+}
 
 
 span,
 mark {
 	color: lightskyblue;
 }
-.second_point span{color: red;}
-.point P {color: chocolate;}
-.third_point > p {color: blue ;}
-h3 + p {	color: brown;}
-.label + p {color: black;}
-[href*="wiki"] {color: red;}
+.second_point span{
+	color: red;
+}
+.point P {
+	color: chocolate;
+}
+.third_point > p {
+	color: blue ;
+}
+h3 + p {
+	color: brown;
+}
+.label + p {
+	color: black;
+}
+[href*="wiki"] {
+	color: red;
+}
