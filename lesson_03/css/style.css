@@ -64,13 +64,13 @@ span,
 mark {
 	color: lightskyblue;
 }
-.second_point span{
+.second-point span{
 	color: red;
 }
-.point P {
+.point p {
 	color: chocolate;
 }
-.third_point > p {
+.third-point > p {
 	color: blue ;
 }
 h3 + p {
