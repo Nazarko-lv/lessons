@@ -1,0 +1,221 @@
+/* Підключення шрифтів */
+
+/* підключення через сайт  fonts.google.com/*/
+/* manrope regular */
+/* @import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+/* manrope semibold */
+/* @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600&display=swap');
+/* manrope medium */
+/* @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap');
+/* manrope bold */
+/* @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@700&display=swap');  
+
+/* підключення через плагін GOOGLE css import */
+@import url(https://fonts.googleapis.com/css?family=Manrope:regular,500,600,700,800);
+
+/* Підключення шрифтів локально */
+@import url(fonts.css);
+
+/* Скидання стилів */
+@import url("reset.css"); 
+
+/* Основні стилі */
+body{
+	font-family: "gilroy", sans-serif;
+	font-weight: 400;
+}
+
+h1{ 
+	font-family: "manrope", sans-serif;
+	/* font-family: 'Times New Roman', serif; */
+	font-weight: 700;
+	font-size: 30px;
+	font-style: italic;
+	text-align: center;
+}
+li{
+	font-style: italic;
+	text-decoration: underline;
+	color: lightblue;
+	font-size: 12px;
+}
+#article,
+#figma{
+	text-align: center;
+	color: blueviolet;
+	line-height: 1.5;
+	font-size: 40px;
+}
+/* CSS-влостивості шрифтів */
+
+.sub-title{
+	font-family: "manrope";
+	font-size: 24px;
+	font-style: oblique;
+	font-weight: 800;
+	color: blue;
+	text-align: center;
+}
+.some-block{
+	text-align: justify;
+}
+
+.sub-title03{
+	text-align: center;
+	font-size: 20px;
+	font-style: italic;
+}
+.span-title{
+	text-decoration: underline;
+	text-decoration-style: dotted;
+	text-decoration-color: blue;
+	color: red;
+
+}
+.through{
+	text-decoration: line-through;
+	color: red;
+}
+
+.overline{
+	text-decoration: overline;
+	text-decoration-style: dotted;
+	color: green;
+}
+
+/* .underline{
+	text-decoration: underline;
+	text-decoration-style: wavy;
+} */
+
+.double{
+	text-decoration: line-through;
+	text-decoration-style: double ;
+	text-decoration-color: burlywood;
+	text-align: right;
+}
+.shadow{
+	text-align: center;
+	text-shadow: 2px -2px 10px rgb(236, 130, 0);
+}
+.multi-shadow{
+	text-align: center;
+	text-shadow: 
+	5px 5px 2px rgb(128, 0, 255),
+	-5px -5px 3px firebrick;
+}
+
+.capital{
+	text-transform: capitalize;
+	text-align: right;
+	text-decoration: underline;
+	text-decoration-style: double;
+	text-decoration-color: blue;
+	line-height: 25px;
+}
+
+.lower{
+			text-transform: lowercase;
+			text-align: left;
+			text-decoration: underline;
+			text-decoration-style: wavy;
+			text-decoration-color: green;
+			font-size: 12px;
+			color: aqua;
+			line-height: 1.2;
+		}
+.upper{
+			text-transform: uppercase;
+			text-align: justify;
+			text-decoration: line-through;
+			text-decoration-style: dotted;
+			text-decoration-color: pink;
+			font-family: manrope sans-serif;
+			font-weight: 800;
+			line-height: 187.5%; /* 30/16 */
+	
+		}
+.letter-word{
+	font-weight: 600;
+	font-style: italic;
+	color: blue;
+	text-align: center;
+	text-transform: capitalize;
+}
+.letter{
+	letter-spacing: 0.1px;
+	color: blueviolet;
+	font-weight: 100;
+	font-size: 10px;
+}
+.word{
+	word-spacing: 10px;
+}
+.personal-portfolio{
+	font-family: work_sans, serif;
+	font-size: 38px;
+	line-height: 32px;
+}
+.sub-title03-p-p{
+	text-align: left;
+	color: #132238;
+	font-size: 38px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 50px;
+	
+}
+.text-p-p{
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 400px;
+	line-height: 24px;
+	color: #556070;
+}
+.business-presentation{
+	font-family: dm_sans, sans-serif;
+	font-size: 38px;
+	font-style: normal;
+	line-height: 158.333333%; /* 38px/24 */
+}
+.sub-title03-b-p{
+	font-size: 88px;
+	font-weight: 700;
+	line-height: 1.0795;
+	color: #1E1B39;
+
+}
+
+.text-b-p{
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 42px;
+	color: #474464;
+}
+
+
+.landing-page{
+	font-family: roboto, sans-serif;
+	font-style: normal;
+}
+.span-l-p{
+		text-decoration: underline;
+		font-size: 35px;
+		color: green;
+		text-align: center;
+	}
+
+.sub-title03-l-p{
+	font-size: 50px;
+	font-weight: 500;
+	line-height: 1.32;
+	letter-spacing: 1px;
+	color: #091133;
+}
+
+.text-l-p{
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 1.66667;
+	color: #505F98;
+}

@@ -1,0 +1,28 @@
+
+@font-face {
+	font-family: 'gilroy';
+	src: url("../fonts/gilroy-bold.woff2") format('woff2'),
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'gilroy';
+	src: url("../fonts/gilroy-medium.woff2") format('woff2'),
+	font-weight 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'gilroy';
+	src: url("../fonts/gilroy-regular.woff2") format('woff2'),
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+
+}
+@import url(https://fonts.googleapis.com/css?family=Work+Sans:regular,400,600);
+@import url(https://fonts.googleapis.com/css?family=DM+Sans:regular,400,700);
+@import url(https://fonts.googleapis.com/css?family=Roboto:regular,400,500);
