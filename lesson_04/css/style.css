@@ -11,10 +11,10 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@700&display=swap');  
 
 /* підключення через плагін GOOGLE css import */
-@import url(https://fonts.googleapis.com/css?family=Manrope:regular,500,600,700,800);
+@import url("https://fonts.googleapis.com/css?family=Manrope:regular,500,600,700,800&display=swap");
 
 /* Підключення шрифтів локально */
-@import url(fonts.css);
+@import url("fonts.css");
 
 /* Скидання стилів */
 @import url("reset.css"); 
@@ -130,7 +130,7 @@ li{
 			text-decoration: line-through;
 			text-decoration-style: dotted;
 			text-decoration-color: pink;
-			font-family: manrope, sans-serif;
+			font-family: "manrope", sans-serif;
 			font-weight: 800;
 			line-height: 187.5%; /* 30/16 */
 	
@@ -152,7 +152,7 @@ li{
 	word-spacing: 10px;
 }
 .personal-portfolio{
-	font-family: work_sans, serif;
+	font-family: "Work sans", serif;
 	font-size: 38px;
 	line-height: 32px;
 }
@@ -173,7 +173,7 @@ li{
 	color: #556070;
 }
 .business-presentation{
-	font-family: dm_sans, sans-serif;
+	font-family: "DM Sans", sans-serif;
 	font-size: 38px;
 	font-style: normal;
 	line-height: 158.333333%; /* 38px/24 */
@@ -195,7 +195,7 @@ li{
 
 
 .landing-page{
-	font-family: roboto, sans-serif;
+	font-family: "roboto", sans-serif;
 	font-style: normal;
 }
 .span-l-p{
