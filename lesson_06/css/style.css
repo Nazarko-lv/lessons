@@ -1,0 +1,381 @@
+/* Підключення шрифтів */
+
+/* підключення через сайт  fonts.google.com/*/
+/* manrope regular */
+/* @import url("https://fonts.googleapis.com/css2?family=Manrope&display=swap");
+/* manrope semibold */
+/* @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@600&display=swap");
+/* manrope medium */
+/* @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap");
+/* manrope bold */
+/* @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@700&display=swap");  
+
+/* підключення через плагін GOOGLE в css import */
+@import url("https://fonts.googleapis.com/css?family=Manrope:regular,500,600,700,800&display=swap"); 
+
+@import url("https://fonts.googleapis.com/css?family=Epilogue:100,200,300,regular,500,600,700,800,900&display=swap");
+
+/* Підключення шрифтів локально */
+@import url("fonts.css");
+
+/* Скидання стилів */
+@import url("reset.css");
+
+/* Основні стилі */
+.wrapper{
+padding: 20px;
+min-height: 100%;
+overflow: hidden;
+}
+
+.page{
+	padding: 50px;
+	/* color: red; */
+}
+
+h1{
+	font-size: 35px;
+	text-align: center;
+	color:darkgreen; 
+	margin-bottom: 35px;
+}
+
+.header{
+	color: brown;
+	font-size: 35px;
+	text-decoration:underline ;
+	margin-bottom: 25px;
+	padding-left: 25px;
+	/* border: 10px double red; */
+}
+
+.section-01{
+	margin-bottom: 35px;
+}
+
+.block{
+background-color: violet;
+/* border: 7px dotted green; */
+border-top: 35px solid #000;
+border-right: 10px dashed red;
+border-bottom: 20px dotted yellow;
+border-left: 15px double green;
+}
+
+.text-with-hover{
+	border: 10px solid #777;
+}
+.text-with-hover:hover{
+	border-color: transparent;
+	/* border-color: black; */
+}
+.inline{
+	background-color: lightgreen;
+	border: 5px solid brown;
+
+}
+
+.inline-block{
+	width: 300px;
+	/* background-color: #794f45; */
+	border: 10px dotted rgb(0, 255, 255);
+
+}
+
+.link{
+	border-bottom: 5px dashed;
+	color: yellowgreen;
+}
+
+.link02{
+	text-decoration: underline;
+	text-decoration-style: wavy;
+	text-decoration-color: #794f45;
+}
+
+.block02{
+	outline: 25px solid #794f45;
+	margin-bottom: 50px; 
+}
+
+.link03:focus{
+	outline: 3px dotted darkmagenta;
+	outline-offset: 10px;
+	font-size: 25px;
+
+}
+
+.inline01{
+	outline: 5px dotted;
+	outline-offset: 5px;
+}
+
+.block03{
+	background-color: darkcyan;
+border-radius: 5px 35px 15px 20px;
+padding: 15px;
+border: 10px solid greenyellow;
+outline: 15px solid pink;
+margin-bottom: 50px;
+}
+
+.block04{
+	border-radius: 17% 83% 40% 60% / 61% 50% 50% 39%;
+	background-color: aqua;
+	width: 150px;
+	height: 150px;
+	text-align: center;
+	vertical-align: middle;
+	margin: 0	auto;
+}
+
+.link04{
+display: inline-block;
+vertical-align: middle;
+}
+
+.circle{
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	background-color: #785;
+	margin-bottom: 35px;
+}
+
+.block05{
+	box-shadow: 15px 15px 15px 15px green,
+	inset 10px 5px 5px 3px #777;
+/* зсув-по-гориз * по-вертт * радіус розмиття * розмір * колір */
+width: 200px;
+margin-bottom: 50px;
+} 
+
+.button{
+	background-color: rgb(43, 101, 226);
+	padding: 15px;
+	border-radius: 15px;
+	font-size: 35px;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	margin-bottom: 25px;
+	box-shadow: 5px 10px 2px 0px black ;
+	text-shadow: 0px -5px 10px #000000a2;
+	color: #457945;
+	margin-bottom: 35px;
+}
+
+.block07{
+background-color: rgb(136, 51, 125);
+padding: 15px;
+width: 200px;
+border-radius: 5px 15px;
+opacity: 0.75;
+box-shadow: -5px -5px 5px 5px black;
+margin-bottom: 35px;
+}
+
+.block08{
+	background-image: url("../img/geographical_center_of_europe.jpg");
+	color: red;
+	margin-bottom: 50px;
+}
+
+.block09{
+	background-image: linear-gradient(45deg, red 15%, green 55%, rgb(60, 50, 205) 20%);
+	margin-bottom: 50px;
+}
+
+.block10{
+	background-color: #457945;
+}
+.text_block10{
+
+	background-image: url("../img/cat.webp");
+	background-position: 50px 15px;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 200px;
+}
+
+.block11 {
+	background-image: url("../img/nature.jpg");
+	margin-bottom: 35px;	
+	background-size: contain;
+	background-repeat: no-repeat;
+	color: red;
+	margin-bottom: 35px;
+}
+
+.block12 {
+	background-image: url("../img/nature.jpg");
+	margin-bottom: 35px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	color: red;
+	margin-bottom: 35px;
+}
+
+.block13{
+	background: green url("../img/cat.webp") center / 200px no-repeat scroll;
+}
+
+.list{
+	font-size: 25px;
+	font-style: italic;
+}
+
+.first{
+	background: url("../img/list-01.svg") 0 0 / 80px no-repeat;
+	min-height: 80px;
+	padding-left: 90px;
+	padding-top: 5px;
+	
+}
+
+.second{
+		background: url("../img/list-02.svg") 0 0 / 80px no-repeat;
+		min-height: 80px;
+		padding-left: 90px;
+		padding-top: 5px;
+}
+
+.subtitle02{
+	font-size: 30px;
+	display: inline-block;
+	box-shadow: 2px 2px 5px 2px crimson;
+	margin-bottom: 35px;
+	padding: 15px;
+}
+
+.conteiner02{
+	margin-bottom: 35px;
+}
+.dark-theme{
+	color: #999;
+	/* background:
+	black url("../img/dt-background.png") 0 0 / contain no-repeat,
+	linear-gradient (180deg, rgba(20, 20, 20, 0.00) 0%, #141414 100%);
+	background: linear-gradient(180deg, rgba(20, 20, 20, 0.00) 0%, #141414 100%); */
+
+	background: 
+			url("../img/button-play-background.svg") center / auto no-repeat,
+			url("../img/around-button-play-vector.svg") center / auto no-repeat,
+			/* linear-gradient(180deg,
+				rgba(20, 20, 20, 0.00) 0%,
+				#141414 100%), */
+				linear-gradient(180deg, #141414 0%, rgba(20, 20, 20, 0.00) 100%),
+					linear-gradient(180deg, rgba(20, 20, 20, 0.00) 0%, #141414 100%),
+	url("../img/dt-background.png") 0 0 / contain no-repeat;
+
+	height: 1092px;
+	width: 1920px;
+	margin: 0 auto;
+	font-family: "manrope", sans-serif;
+}
+
+.dt-subtitle03{
+	text-align: center;
+	color: #fff;
+	font-size: 58px;
+	font-weight: 700;
+	line-height: 150%;
+	padding-top: 796px;
+	margin-bottom: 14px;
+
+}
+
+.dt-text{
+	text-align: center;
+	font-size: 18px;
+	line-height: 1.5;
+	width: 1096px;
+	margin: 0 auto;
+
+}
+
+.button-icon-dt{
+	background: #E50000 url("../img/button-play-for-red-button.svg") 24px 50% / 30px no-repeat;
+	padding-inline: 24px;
+	padding-block: 18px;
+	border-radius: 8px;
+	color: #fff;
+	font-family: "manrope", sans-serif;
+	font-size: 18px;
+	font-weight: 600;
+		text-transform: capitalize;
+	/* display: inline-block;
+	text-align: center; */
+}  
+
+.button-icon-dt span {
+display: inline-block;
+text-align: center;
+padding-left: 35px;
+}
+
+
+/* Cтилі для макету "Портфоліо" */
+
+.portfolio{
+	font-family: "Epilogue", sans-serif;
+background-color: #FDF0E9;
+}
+
+.conteiner03 {}
+
+.portfolio-text {
+	padding-inline: 135px;
+	padding-block: 80px	;
+}
+
+.subtitle04-portfolio {
+	color: #EF6D58;
+	line-height: 32px;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+	
+}
+
+.subtitle03-portfolio {
+	font-size: 56px;
+	font-weight: 800;
+	line-height: 64px;
+	letter-spacing: -1;
+	color: #391400;
+	text-transform: capitalize;
+	width: 397px;
+	height: 128px;
+	margin-bottom: 26px;
+	
+}
+
+.text-portfolio {
+	color: #391400;
+		font-size: 20px;
+		font-style: normal;
+		line-height: 32px;
+		margin-bottom: 26px;
+	
+}
+
+.list-portfolio {}
+
+.list-item-portfolio {
+	margin-bottom: 16px;
+	background: url("..//img/check-portfolio.svg") 0 50% 	/ auto no-repeat	;
+	min-height: 40px;
+	margin-bottom: 16px ;
+	padding-left: 50px;
+	padding-top: 12px;
+}
+
+.photo-portfolio{
+display: inline-block;
+text-align: right;
+
+
+
+	
+}
