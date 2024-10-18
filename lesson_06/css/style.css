@@ -23,13 +23,13 @@
 
 /* Основні стилі */
 .wrapper{
-padding: 20px;
+
 min-height: 100%;
 overflow: hidden;
 }
 
 .page{
-	padding: 50px;
+
 	/* color: red; */
 }
 
@@ -250,6 +250,8 @@ margin-bottom: 35px;
 
 .conteiner02{
 	margin-bottom: 35px;
+	text-align: center;
+		background-color: #000;
 }
 .dark-theme{
 	color: #999;
@@ -266,22 +268,32 @@ margin-bottom: 35px;
 				#141414 100%), */
 				linear-gradient(180deg, #141414 0%, rgba(20, 20, 20, 0.00) 100%),
 					linear-gradient(180deg, rgba(20, 20, 20, 0.00) 0%, #141414 100%),
-	url("../img/dt-background.png") 0 0 / contain no-repeat;
+				black url("../img/dt-background.png") center / cover no-repeat;
 
-	height: 1092px;
-	width: 1920px;
-	margin: 0 auto;
+	min-height: 860px;
+	
 	font-family: "manrope", sans-serif;
+
+}
+
+.dark-theme-content{
+color: #999;
+font-family: "manrope", sans-serif;
+max-width: 1096px; 
+margin: 0 auto;
+padding: 0 15px;
+margin-top: -23px;
+
 }
 
 .dt-subtitle03{
-	text-align: center;
+	/* text-align: center; */
 	color: #fff;
 	font-size: 58px;
 	font-weight: 700;
 	line-height: 150%;
-	padding-top: 796px;
 	margin-bottom: 14px;
+
 
 }
 
@@ -289,8 +301,9 @@ margin-bottom: 35px;
 	text-align: center;
 	font-size: 18px;
 	line-height: 1.5;
-	width: 1096px;
-	margin: 0 auto;
+	/* width: 1096px;
+	margin: 0 auto; */
+	margin-bottom: 50px;
 
 }
 
@@ -319,7 +332,11 @@ padding-left: 35px;
 
 .portfolio{
 	font-family: "Epilogue", sans-serif;
-background-color: #FDF0E9;
+
+	/* background-color: #FDF0E9; */
+
+	background: #FDF0E9 url("../img/photo-collage-portfolio.svg") right center / auto no-repeat;
+	
 }
 
 .conteiner03 {}
@@ -374,8 +391,5 @@ background-color: #FDF0E9;
 .photo-portfolio{
 display: inline-block;
 text-align: right;
-
-
-
 	
 }
