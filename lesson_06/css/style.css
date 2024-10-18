@@ -51,6 +51,7 @@ h1{
 
 .section-01{
 	margin-bottom: 35px;
+	padding-inline: 15px;
 }
 
 .block{
@@ -244,14 +245,15 @@ margin-bottom: 35px;
 	font-size: 30px;
 	display: inline-block;
 	box-shadow: 2px 2px 5px 2px crimson;
-	margin-bottom: 35px;
+	margin-bottom: 50px;
 	padding: 15px;
 }
 
 .conteiner02{
 	margin-bottom: 35px;
 	text-align: center;
-		background-color: #000;
+	background-color: #141414;
+	padding-bottom: 15px;
 }
 .dark-theme{
 	color: #999;
@@ -261,17 +263,16 @@ margin-bottom: 35px;
 	background: linear-gradient(180deg, rgba(20, 20, 20, 0.00) 0%, #141414 100%); */
 
 	background: 
-			url("../img/button-play-background.svg") center / auto no-repeat,
-			url("../img/around-button-play-vector.svg") center / auto no-repeat,
+			url("../img/button-play-background.svg") center / 160px no-repeat,
+			url("../img/around-button-play-vector.svg") center / 470px no-repeat,
 			/* linear-gradient(180deg,
 				rgba(20, 20, 20, 0.00) 0%,
 				#141414 100%), */
 				linear-gradient(180deg, #141414 0%, rgba(20, 20, 20, 0.00) 100%),
 					linear-gradient(180deg, rgba(20, 20, 20, 0.00) 0%, #141414 100%),
-				black url("../img/dt-background.png") center / cover no-repeat;
+				#141414 url("../img/dt-background.png") center / cover no-repeat;
 
 	min-height: 860px;
-	
 	font-family: "manrope", sans-serif;
 
 }
@@ -282,7 +283,7 @@ font-family: "manrope", sans-serif;
 max-width: 1096px; 
 margin: 0 auto;
 padding: 0 15px;
-margin-top: -23px;
+margin-top: -61px;
 
 }
 
@@ -333,17 +334,20 @@ padding-left: 35px;
 .portfolio{
 	font-family: "Epilogue", sans-serif;
 
-	/* background-color: #FDF0E9; */
+	background-color: #FDF0E9; 
 
-	background: #FDF0E9 url("../img/photo-collage-portfolio.svg") right center / auto no-repeat;
+
 	
 }
 
-.conteiner03 {}
+.conteiner03 {
+	text-align: center;
+}
 
 .portfolio-text {
 	padding-inline: 135px;
 	padding-block: 80px	;
+	text-align: left;
 }
 
 .subtitle04-portfolio {
@@ -367,6 +371,9 @@ padding-left: 35px;
 	margin-bottom: 26px;
 	
 }
+.conteiner03 div{
+	display: inline-block;
+}
 
 .text-portfolio {
 	color: #391400;
@@ -389,7 +396,7 @@ padding-left: 35px;
 }
 
 .photo-portfolio{
-display: inline-block;
 text-align: right;
+vertical-align: top;
 	
 }
