@@ -294,6 +294,7 @@ margin-top: -61px;
 	font-weight: 700;
 	line-height: 150%;
 	margin-bottom: 14px;
+	text-transform: capitalize;
 
 
 }
@@ -342,12 +343,19 @@ padding-left: 35px;
 
 .conteiner03 {
 	text-align: center;
+	padding: 77px 15px 15px 15px;
+	max-width: 1200px;
+	font-size: 0;
+	margin: 0 auto;
 }
 
 .portfolio-text {
-	padding-inline: 135px;
+	/* padding-inline: 135px; */
 	padding-block: 80px	;
 	text-align: left;
+	max-width: 470px;
+	margin-right: 171px;
+
 }
 
 .subtitle04-portfolio {
@@ -373,6 +381,7 @@ padding-left: 35px;
 }
 .conteiner03 div{
 	display: inline-block;
+
 }
 
 .text-portfolio {
@@ -382,21 +391,29 @@ padding-left: 35px;
 		line-height: 32px;
 		margin-bottom: 26px;
 	
+	
 }
 
 .list-portfolio {}
 
 .list-item-portfolio {
 	margin-bottom: 16px;
-	background: url("..//img/check-portfolio.svg") 0 50% 	/ auto no-repeat	;
+	/* background: url("..//img/check-portfolio.svg") 0 50% 	/ auto no-repeat	; */
+	background: url("..//img/check-portfolio.svg") 0 center / 32px 32px no-repeat;
 	min-height: 40px;
 	margin-bottom: 16px ;
 	padding-left: 50px;
 	padding-top: 12px;
+	font-size: 16px;
 }
 
 .photo-portfolio{
 text-align: right;
 vertical-align: top;
+max-width: 529px;
 	
+}
+
+.photo-portfolio img{
+	max-width: 100%;
 }
