@@ -887,7 +887,20 @@ margin-bottom: 0;
 	vertical-align: middle;
 }
 
-.agency__ol-list li:nth-child(1)::before{
+
+ol{
+	counter-reset: list-counter;
+}
+
+ol li::before{
+	counter-increment: list-counter;
+	content: counter(list-counter) ".";
+	display: inline-block;
+	margin-right: 5px;
+
+}
+
+/* .agency__ol-list li:nth-child(1)::before{
 	content: "1.";
 }
 .agency__ol-list li:nth-child(2)::before {
@@ -918,7 +931,7 @@ margin-bottom: 0;
 }
 .agency__ol-list li:nth-child(10)::before {
 	content: "10.";
-}
+} */
 
 
 
