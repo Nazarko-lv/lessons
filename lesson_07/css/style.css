@@ -330,7 +330,7 @@ border-radius: 5px;
 .show-block:hover{
 	text-decoration: underline;
 	width: fit-content;
-	padding: 10ps;
+	padding: 10px;
 }
 
 .block-for-showing{
