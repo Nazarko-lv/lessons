@@ -1,0 +1,141 @@
+/* Підключення шрифтів */
+
+/* підключення через сайт  fonts.google.com/*/
+/* manrope regular */
+/* @import url("https://fonts.googleapis.com/css2?family=Manrope&display=swap");
+/* manrope semibold */
+/* @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@600&display=swap");
+/* manrope medium */
+/* @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap");
+/* manrope bold */
+/* @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@700&display=swap");  
+
+/* підключення через плагін GOOGLE в css import */
+/* @import url("https://fonts.googleapis.com/css?family=Manrope:regular,500,600,700,800&display=swap");  */
+
+/* @import url("https://fonts.googleapis.com/css?family=Epilogue:100,200,300,regular,500,600,700,800,900&display=swap"); */
+
+@import url("https://fonts.googleapis.com/css?family=DM+Sans:100,200,300,regular,500,600,700,800,900,&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap'); */
+/* Підключення шрифтів локально */
+
+
+
+@import url("fonts.css");
+
+/* Скидання стилів */
+@import url("reset.css");
+
+/* Основні стилі */
+/* ======Game======= */
+
+/* .wrapper__game{
+	background: url("../img/game/background-game.svg") center / cover	no-repeat;
+} */
+
+/* батьківський блок зі стилями */
+.block-g {
+	background-color: pink;
+	color: white;
+	font-size: 50px;
+	border: 2px solid green;
+	border-radius: 10px;
+	padding: 15px;
+	/* max-width: 500px; */
+	/* margin: 0 auto; */
+}
+
+
+	
+
+/* друга версія */
+.game-wrap2{
+	padding: 25px;
+	margin: 0 auto;
+	width: 1300px;
+	height: 640px;
+	background-color: rgb(255, 145, 0);
+		box-shadow: 0 0 15px green;
+		border-radius: 15px;
+}
+
+.game-ul-item:nth-child(odd){
+	background: url("../img/game/road-horizontal.svg") center / 450px 120px no-repeat;
+	height: 35px;
+
+}
+.game-ul-item:nth-child(even){
+	background: url("../img/game/road-vertical.svg") center / cover no-repeat;
+	width: 50px;
+}
+.icon-start{
+	display: inline-block;
+}
+.start-img{
+	height: 100px;
+	margin-left: 69%; 
+
+}
+.game-ul{
+	margin-top: -70px;
+}
+/* координати кожної "дороги" */
+
+.road-2{
+
+margin-left: 64%;
+height: 200px;
+}
+.road-3{
+width: 200px;
+margin-left: 52%;
+}
+
+.road-4{
+
+	height: 150px;
+	margin-left: 52%;
+	margin-top: -12%;
+}
+
+.road-5{
+	width: 250px;
+	margin-left: 32%;
+	margin-top: -12%;
+}
+.road-6{
+
+	margin-left: 32%;
+	height: 215px;
+}
+.road-7{
+	width: 900px;	
+	margin-left: 14%;
+}
+.road-8{
+height: 75px;
+margin-left: 64%;
+}
+
+.finish-flags{
+	margin-left: 56%;
+	margin-top: -4%;
+} 
+
+
+
+.game-ul-item,
+.finish-flags
+{
+	visibility: hidden;
+
+}
+
+
+.icon-start:hover + .game-ul-item{	
+	visibility: visible;
+}
+
+
