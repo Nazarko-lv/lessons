@@ -155,7 +155,8 @@ margin-left: 64%;
 
 
 
-.game-ul:has(.road-8:hover)~.finish {
+.game-ul:has(.road-8:hover)~.finish, 
+finish:hover {
 	visibility: visible;}
 
 
