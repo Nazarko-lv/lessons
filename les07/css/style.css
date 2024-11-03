@@ -127,15 +127,38 @@ margin-left: 64%;
 
 
 .game-ul-item,
-.finish-flags
+.finish
 {
 	visibility: hidden;
 
 }
 
 
-.icon-start:hover + .game-ul-item{	
+
+
+.icon-start:hover+.game-ul>.game-ul-item:first-child {
 	visibility: visible;
 }
 
+.game-ul-item:hover+.game-ul-item, .game-ul-item:hover{visibility: visible;}
 
+/* .game-ul-item:hover+.game-ul-item,
+.game-ul-item >.finish {
+	visibility: visible;
+} */
+
+
+
+/* .game-ul:has(:last-child:hover)~.finish-flags{
+	visibility: visible;
+} */
+
+
+
+.game-ul:has(.road-8:hover)~.finish {
+	visibility: visible;}
+
+
+	/* .game-ul:last-child~.finish{
+		visibility: visible;
+	} */
