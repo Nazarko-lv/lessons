@@ -1,0 +1,1127 @@
+/* Підключення шрифтів */
+
+/* підключення через сайт  fonts.google.com/*/
+/* manrope regular */
+/* @import url("https://fonts.googleapis.com/css2?family=Manrope&display=swap");
+/* manrope semibold */
+/* @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@600&display=swap");
+/* manrope medium */
+/* @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap");
+/* manrope bold */
+/* @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@700&display=swap");  
+
+/* підключення через плагін GOOGLE в css import */
+/* @import url("https://fonts.googleapis.com/css?family=Manrope:regular,500,600,700,800&display=swap");  */
+
+/* @import url("https://fonts.googleapis.com/css?family=Epilogue:100,200,300,regular,500,600,700,800,900&display=swap"); */
+
+@import url("https://fonts.googleapis.com/css?family=DM+Sans:100,200,300,regular,500,600,700,800,900,&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap'); */
+/* Підключення шрифтів локально */
+
+
+
+@import url("fonts.css");
+
+/* Скидання стилів */
+@import url("reset.css");
+
+/* Основні стилі */
+.wrapper{
+
+min-height: 100%;
+overflow: hidden;
+background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+background-attachment: fixed;
+}
+
+.page{
+
+	/* color: red; */
+}
+
+h1{
+	font-size: 35px;
+	text-align: center;
+	color:darkgreen; 
+	margin-bottom: 35px;
+}
+
+.header{
+	color: brown;
+	font-size: 35px;
+	text-decoration:underline ;
+	margin-bottom: 25px;
+	padding-left: 25px;
+	/* border: 10px double red; */
+}
+
+.conteiner-01{
+	padding: 25px;
+	/* color: red; */
+	margin: 0	auto;
+
+
+}
+
+.card01{
+	background-color: blueviolet;
+	max-width: 200px;
+	height: 150px;
+margin-bottom: 25px;
+}
+
+.card01:hover{
+	box-shadow: 5px 5px 10px yellowgreen
+}
+
+.link	span{
+	color: chocolate;
+	margin-bottom: 50px;
+	
+}
+
+.link:hover span{
+	text-decoration: underline;
+text-decoration-style: wavy;
+}
+
+
+/* ====варіант з вкладенням №1 */
+
+.block02{
+	width: 250px;
+	height: 100px;
+	background-color: coral;
+padding: 25px;
+font-size: 35px;
+margin: 0 auto;
+border-radius: 10px;
+	margin-bottom: 25px;
+}
+
+/* .block02:hover a{
+	box-shadow: 0px -2px 10px wheat;
+} */
+.block02 a {
+	padding: 10px;
+
+}
+.block02 a:hover {
+	box-shadow: 0px -5px 10px wheat;
+	color: greenyellow;
+	border-radius: 5px;
+}
+
+/* ====варіант з вкладенням №2 */
+
+.block03 {
+	width: 250px;
+	height: 100px;
+	background-color: cyan;
+	padding: 25px;
+	font-size: 30px;
+	margin: 0 auto;
+	border-radius: 10px;
+	margin-bottom: 25px;
+}
+
+
+.block03 a {
+	padding: 10px;
+}
+
+.block03:hover a {
+	box-shadow: 0px -5px 10px wheat;
+	color: rgb(255, 141, 47);
+	border-radius: 5px;
+	font-size: 31px;
+}
+
+/* =====приклад з вкладенням No3 */
+
+.block04 {
+	width: 250px;
+	height: 100px;
+	background-color: rgb(140, 0, 255);
+	padding: 25px;
+	font-size: 30px;
+	margin: 0 auto;
+	border-radius: 10px;
+	margin-bottom: 25px;
+}
+
+.block04 p {
+	visibility: hidden;
+}
+
+
+.block04 p:hover {
+	box-shadow: 0px -5px 10px wheat;
+	color:white;
+	border-radius: 5px;
+	font-size: 32px;
+	visibility: visible;
+	
+}
+
+/* =====приклад з вкладенням No4 */
+
+.block05 {
+	width: 250px;
+	height: 100px;
+	background-color: rgb(140, 0, 255);
+	padding: 25px;
+	font-size: 30px;
+	margin: 0 auto;
+	border-radius: 10px;
+	margin-bottom: 25px;
+
+}
+
+.block05 p{
+	visibility: hidden;
+}
+
+
+
+.block05:hover p {
+	visibility: visible;
+}
+
+
+/* ====використання елементу :active */
+
+.block06 {
+	width: 250px;
+	height: 200px;
+	background-color: cyan;
+	padding: 25px;
+	font-size: 25px;
+	margin: 0 auto;
+	border-radius: 10px;
+	margin-bottom: 25px;
+}
+
+
+.block06 a {
+	padding: 10px;
+}
+
+.block06:hover a {
+	box-shadow: 0px -5px 10px wheat;
+	color: green;
+	border-radius: 5px;
+	
+}
+
+
+.block06:active a{
+	color: rgb(17, 0, 255);
+}
+
+.link06:visited {
+	color: dimgrey;
+}
+
+/* =====Псевдоелемент :visited */
+
+/* .block07{
+	margin: 0	auto;
+
+	display: inline-block;
+	text-align: center;
+	font-size: 25px;
+	border: solid green;
+	padding: 15px;
+}
+
+.block07 p{
+	display: inline-block;
+} */
+
+.link-button{
+	display: block;
+	width: fit-content;
+	margin: 0 	auto;
+	border: dotted red;
+	padding: 5px;
+	margin-bottom: 35px;
+}
+
+.link-button:visited{
+	color:greenyellow;
+	background-color: cornflowerblue;
+
+}
+
+.button-wrapper{
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.button-visited{
+	display: inline-block;
+	padding: 10px 15px;
+	background-color: cadetblue;
+	border-radius: 8px;
+
+}
+
+.button-visited:visited {
+	color: whitesmoke;
+	background-color: chocolate;
+	border-color: chartreuse;
+
+}
+
+/* :focus,
+:focus-visible Звернення до елементу у стані "фокусу" */
+
+.link-focus{
+	display: block;
+		width: fit-content;
+		margin: 0 auto;
+		/* border: dotted red; */
+		background-color: blanchedalmond;
+		border-radius: 10px;
+		padding: 10px;
+		margin-bottom: 35px;
+}
+
+.link-focus:focus {
+	border: dotted green;
+	outline: 10px dotted white;
+}
+
+/* Тільки коли на об'єкт перейшли (TAB) */
+.link-focus-visible {
+	display: block;
+	width: fit-content;
+	margin: 0 auto;
+	/* border: dotted red; */
+	background-color: blanchedalmond;
+	border-radius: 10px;
+	padding: 10px;
+	margin-bottom: 35px;
+}
+
+.link-focus-visible:focus-visible {
+	border: 25px dotted rgb(38, 0, 128);
+}
+
+/*
+:target
+Звернення до елемента у стані
+"ефекту від посилання з іншого об'єкту"
+*/
+
+.show-block{
+display: block;
+width: fit-content;
+padding: 10px;
+margin: 0 auto;
+background-color: cyan;
+border-radius: 5px;
+}
+
+.show-block:hover{
+	text-decoration: underline;
+	width: fit-content;
+	padding: 10ps;
+}
+
+.block-for-showing{
+	display: none;
+}
+
+.block-for-showing:target{
+	display: block;
+}
+
+/* ===== Псевдоелементи положення в коді =====*/
+.conteiner-02 {
+	margin: 0 auto;
+	padding: 25px;
+}
+
+.subtitle02 {
+
+	border: double pink;
+	padding: 10px;
+	text-align: center;
+	color: greenyellow;
+	font-size: 25px;
+	margin-bottom: 25px;
+
+}
+
+.code-position {
+	background-color: bisque;
+	padding: 10px;
+	border-radius: 10px;
+	box-shadow: 0px -5px 5px 5px white;
+	opacity: 0.8;
+}
+
+.list__conteiner-02 {}
+
+.list-item__conteiner-02 {
+	background: url("../img/check.svg") left center / 32px no-repeat ;
+	min-height: 40px;
+	vertical-align: middle;
+	padding-left: 45px;
+	padding-top: 10px;
+}
+
+.code-position li:first-child {
+	color:blueviolet
+}
+
+.code-position p:first-child{
+	color: cornflowerblue;
+	text-transform: uppercase;
+}
+
+.code-position p:first-of-type{
+	color: yellow
+}
+
+.code-position *:first-child{
+	color:brown
+}
+
+.code-position li:nth-child(3){
+	color: darkgreen;
+}
+
+.code-position p:nth-child(5) {
+	color: darkgreen;
+}
+
+.conteiner-03 {
+	padding: 15px;
+	background: url("../img/background_geom.svg") center / cover no-repeat fixed;
+	color: bisque;
+	font-size: 25px;
+	margin-bottom: 25px;
+}
+
+.algorithmi{
+	margin-bottom: 25px;
+	max-width: fit-content;
+	background-color: rgba(222, 184, 135, 0.267);
+	padding: 15px;
+	box-shadow: inset 2px 2px 2px  5px rgba(245, 245, 245, 0.473);
+	
+}
+
+.algorithmi p:nth-of-type(odd){
+	color: blueviolet;
+	text-shadow: 1px 1px white;
+}
+
+.algorithmi p:last-of-type{
+	margin-bottom: 25px;
+}
+
+.algorithmi li:nth-of-type(3n) {
+	color: chartreuse;
+
+}
+
+.algorithmi li:nth-of-type(3n+1) {
+	color: yellow;
+
+}
+
+.class-not{
+		/* max-width: fit-content; */
+			background-color: rgba(222, 184, 135, 0.267);
+		border-radius: 15px;
+		padding: 10px 15px;
+	
+		}
+			
+			
+.class-not *:first-child{
+	font-size: 45px;
+	color: rgb(0, 195, 255);
+	text-shadow: 1px 1px whitesmoke;
+	text-align: center;
+}
+/* .class-not p {
+	margin-bottom: 10px;
+}
+ */
+
+.class-not p:not(:last-child) {
+	margin-bottom: 20px;
+}
+.class-not a{
+	display:block ;
+	margin-bottom: 5px;
+}
+
+/* .class-not *:last-child {
+	margin-bottom: 0px;
+} */
+
+.class-not p:not(.without-color){
+	color: darkblue;
+}
+
+/* ====псевдоклас присутності в коді :has */
+
+.conteiner-04{
+background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(200, 72, 72, 0.7053364269141531) 41%, rgba(252, 176, 69, 1) 100%);
+padding: 5px 15px;
+}
+
+.block-has-test a:hover{
+	text-decoration: underline;
+	text-decoration-style: wavy;
+}
+
+.block-has-test{
+	background-color: rgba(255, 228, 196, 0.24);
+	margin-bottom: 10px;
+	padding: 0 10px;
+}
+
+.block-has-test:has(span) {
+	color: chartreuse;
+
+}
+.block-has-test:has(span)::after {
+	color: chartreuse;;
+	content: "я зелений бо на мене впливає :has(span)";
+	border: solid 2px whitesmoke;
+}
+
+/* ============ Контейнер 05  ===========*/
+.conteiner-05  *:not(:last-child) {
+	margin-bottom: 20px;
+}
+.conteiner-05{
+		padding: 5px 10px;
+		background-color: #9aaa507c;
+		margin-bottom: 25px;
+
+}
+.conteiner-05 h2{
+	font-weight: 700;
+	font-size: 50px;
+}
+
+.conteiner-05 p {
+	/* font-weight: 700;
+	font-size: 50px; */
+	margin-bottom: 50px;
+}
+
+.conteiner-05__photo{
+	max-height: 150px;
+	border-radius: 25px;
+
+}
+.conteiner-05 a{ 
+	color:rgb(115, 255, 0)
+}
+.conteiner-05 a:hover{
+	text-decoration: underline;
+	
+}
+
+/* .conteiner-05 *:not(:last-child){
+	margin-bottom: 20px;
+} */
+
+
+
+/* ===== Контейнер - 06 */
+.conteiner-06 >* {
+	margin-bottom: 20px;
+
+}
+.conteiner-06 {
+	background-color: #cf636367;
+	border-radius: 20px;
+	padding: 0 10px;
+	margin-bottom: 50px;
+}
+
+.conteiner-06 h2 {
+	font-weight: 700;
+	font-size: 50px;
+}
+.conteiner-06__photo {
+	max-width: 450px;
+	
+}
+
+.conteiner-06 a {
+	color: rgb(115, 255, 0);
+
+}
+
+.conteiner-06 a:hover {
+	text-decoration: underline;
+}
+
+.conteiner-06 p{
+	margin-bottom: 50px;
+}
+
+
+
+.conteiner-06 > *:last-child{
+	margin-bottom: 0;
+}
+
+
+
+/* ========Макети з FIGMA ======== */
+
+
+/* =====TIMELINE====== */
+
+.timeline__wrapper{
+	background-color: #fff;
+	padding: 15px;
+
+}
+.timeline{
+	font-family: 'DM Sans', sans-serif;
+	font-size: 24px;
+	color: #6E6C83;
+	background-color: #fff ;
+		max-width: 890px;
+		margin: 0	auto;
+	font-size: 0;	
+}
+
+.timeline >*:last-child{
+	margin-bottom: 0;
+}
+
+.timeline__item01{
+	background: url("../img/business-presentation/timeline/number-01.svg") left center / 218px no-repeat;
+	min-height: 220px;
+	padding-left: 260px;
+	padding-block: 21px;
+	margin-bottom: 54px;
+}
+
+.timeline__subtitle03 {
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 22px;
+	color: #4A3AFF;
+}
+
+.timeline__subtitle02 {
+	font-size: 42px;
+	font-weight: 700;
+	line-height: 54px;
+	color: #1E1B39;
+
+}
+
+.timeline__text {
+	font-size: 24px;
+	line-height: 42px;
+}
+
+.timeline__item02 {
+	background: url("../img/business-presentation/timeline/number-02.svg") left center / 218px no-repeat;
+	min-height: 220px;
+	padding-left: 260px;
+	padding-block: 21px;
+	margin-bottom: 54px;
+}
+
+.timeline__item03 {
+	background: url("../img/business-presentation/timeline/number-03.svg") left center / 218px no-repeat;
+	min-height: 220px;
+	padding-left: 260px;
+	padding-block: 21px;
+	margin-bottom: 54px;
+}
+
+.timeline__item01 h2::after{
+	vertical-align: top;
+	content: "";
+	margin-left: 15px;
+	width: 43px;
+	height: 43px;
+	background: url("../img/business-presentation/timeline/search.png") center / 43px no-repeat;
+}
+
+.timeline__item02 h2::after {
+	vertical-align: top;
+	content: "";
+	margin-left: 15px;
+	width: 43px;
+	height: 43px;
+	background: url("../img/business-presentation/timeline/laptop.png") center / 43px no-repeat;
+}
+.timeline__item03 h2::after {
+	vertical-align: top;
+	content: "";
+	margin-left: 15px;
+	width: 43px;
+	height: 43px;
+	background: url("../img/business-presentation/timeline/rocket.png") center / 43px no-repeat;
+}
+
+
+/* =====Pricing====== */
+
+.pricing__wrapper {
+	background-color: #fff;
+	font-family: 'DM Sans', sans-serif;
+	font-size: 0;
+	margin-bottom: 50px;
+}
+
+.card__wrapper {
+	max-width: 543px;
+	border-radius: 56px;
+	background-color: #F0F0F6;
+	margin: 0	auto;
+	padding: 24px;
+}
+
+.card {
+	background-color: #4A3AFF;
+	width: 495px;
+	height: 271px;
+	border-radius: 34px;
+	padding: 44px 139px;
+	margin-bottom: 34px;
+
+}
+
+.card h3{
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 32px;
+	text-align: center;
+	color: #fff;
+	margin-bottom: 2px;
+}
+
+.price {
+	font-size: 116px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 120px;
+	color: #fff;
+	text-align: center;
+	margin-bottom: 6px;
+}
+
+.billing {
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 22px;
+	color: #fff;
+	opacity: 0.6;
+	text-align: center;
+}
+
+
+.pricing__list {
+	color: #1E1B39;
+	font-size: 28px;
+	font-weight: 700;
+	line-height: 38px;
+	/* margin: 0px 67px 58px 13px;  */
+	margin-bottom: 34px;
+	margin-left: 13px;
+}
+
+
+.pricing__list-item:not(:last-child){
+	margin-bottom: 26px;
+}
+
+.pricing__list-item::before {
+	content: "";
+	vertical-align: middle;
+	height: 36px;
+	width: 36px;
+	background: url("../img/business-presentation/pricing/Check\ Circle.svg") center / 36px no-repeat;
+	margin-right: 14px;
+}
+
+
+/* =====Agency====== */
+
+.agency-wrapper {
+	background: #FDF0E9;
+
+	font-family: "";
+	font-family: "Epilogue", sans-serif;
+	font-size: 0;
+	padding: 15px;
+}
+
+
+.agency__main-photo {
+	display: block;
+	margin: 0	auto;
+	border-radius: 6px;
+	margin-bottom: 74px;
+	max-width: 970px;
+}
+
+.agency__text-content{
+	max-width: 570px;
+	margin: 0 auto;
+}
+
+/* .agency__text-content >*{
+	margin-bottom: 32px;
+} */
+/* =================================== */
+
+.agency__text-content-block01{
+	margin-bottom: 51px;
+}
+
+.agency__text-content-block02{
+	margin-bottom: 65px;
+}
+
+
+.agency__text-content-block02 h2 {
+	margin-bottom: 35px;
+}
+
+.agency__text-content-block02 *:last-child{
+	margin-bottom: 0;
+}
+
+.agency__text-content-block02 p{
+	margin-bottom: 34px;
+}
+
+.agency__text-content-block02 ul{
+	margin-bottom: 32px;
+}
+/* ====================================== */
+
+
+
+.agency__text-content-block03 *:last-child {
+margin-bottom: 0;	
+}
+
+.agency__text-content-block03 p{
+	margin-bottom: 28px;
+}
+.agency__text-content-block03 ol{
+	margin-bottom: 32px;
+}
+
+.agency__text-content-block03{
+	margin-bottom: 69px;
+}
+
+.agency__text-content:last-child::after{
+	content: "";
+	height:  1px;
+	width: 100%;
+	background-color: #F3D1BF; 
+	margin-top: 58px;
+}
+
+.agency__subtitle04 {
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 32px;
+	color: #391400;
+	margin-bottom: 32px;
+}
+
+.agency__text {
+	color: rgba(57, 20, 0, 0.64);
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 32px;
+}
+
+.agency__subtitle03 {
+	color: #391400;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 32px;
+	margin-bottom: 35px;
+}
+
+.agency-wrapper li{
+	color: #391400;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 32px;
+
+}
+
+.agency__ul-list {}
+
+.agency__ul-list-item::before {
+	content: "";
+	width: 8px;
+	height: 8px;
+	background: url("../img/portfolio-teamplate/oval.svg") left center / 8px no-repeat;
+	padding-left: 16px;
+	vertical-align: middle;
+}
+
+.agency__ol-list li:nth-child(1)::before{
+	content: "1.";
+}
+.agency__ol-list li:nth-child(2)::before {
+	content: "2.";
+}
+.agency__ol-list li:nth-child(3)::before {
+	content: "3.";
+}.agency__ol-list li:nth-child(4)::before {
+	content: "4.";
+}
+
+.agency__ol-list li:nth-child(5)::before {
+	content: "5.";
+}
+
+.agency__ol-list li:nth-child(6)::before {
+	content: "6.";
+}
+.agency__ol-list li:nth-child(7)::before {
+	content: "7.";
+}
+
+.agency__ol-list li:nth-child(8)::before {
+	content: "8.";
+}
+.agency__ol-list li:nth-child(9)::before {
+	content: "9.";
+}
+.agency__ol-list li:nth-child(10)::before {
+	content: "10.";
+}
+
+
+
+.agency__li-list-item {
+	
+	
+}
+
+
+
+
+
+.quote-wapper {
+	color: #391400;
+	background-color: #F9E5DA;
+	/* padding-inline: 32px;
+	padding-top: 42px;
+	padding-bottom: 32px; */
+padding: 42px 32px 32px ;
+margin-bottom: 76px;
+	
+}
+
+.quote {
+	background: url("../img/portfolio-teamplate/shape.svg")  left top / 48px no-repeat;
+
+
+}
+
+.quote-text {
+
+	margin-left: 32px;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 32px;
+	margin-left: 80px;
+
+}
+
+/* ====Кнопка переходу на сторінку з грою */
+.game-button-wrapper{
+	text-align: center;
+	padding: 25px;
+
+}
+
+.game-button{
+	padding: 15px;
+	border-color: #391400;
+	background-color: #4A3AFF;
+	border-radius: 15px;
+	font-size: 50px;
+	font-style: italic;
+}
+
+.game-button:hover{
+	box-shadow: 10px 10px 50px gold;
+	color: rgb(135, 166, 222);
+}
+
+.game-button:active{
+	border: dotted 7px greenyellow;
+}
+
+/* ======Game======= */
+
+/* .wrapper__game{
+	background: url("../img/game/background-game.svg") center / cover	no-repeat;
+} */
+
+/* батьківський блок зі стилями */
+
+
+/* друга версія */
+.game-wrap2 {
+	padding: 25px;
+	margin: 0 auto;
+	width: 1300px;
+	height: 640px;
+	background-color: rgb(255, 145, 0);
+	box-shadow: 0 0 15px green;
+	border-radius: 15px;
+}
+
+.game-ul-item:nth-child(odd) {
+	background: url("../img/game/road-horizontal.svg") center / 450px 120px no-repeat;
+	height: 35px;
+
+}
+
+.game-ul-item:nth-child(even) {
+	background: url("../img/game/road-vertical.svg") center / cover no-repeat;
+	width: 50px;
+}
+
+.icon-start {
+	display: inline-block;
+}
+
+.start-img {
+	height: 100px;
+	margin-left: 69%;
+
+}
+
+.game-ul {
+	margin-top: -70px;
+}
+
+/* координати кожної "дороги" */
+
+.road-2 {
+
+	margin-left: 64%;
+	height: 200px;
+}
+
+.road-3 {
+	width: 200px;
+	margin-left: 52%;
+}
+
+.road-4 {
+
+	height: 150px;
+	margin-left: 52%;
+	margin-top: -12%;
+}
+
+.road-5 {
+	width: 250px;
+	margin-left: 32%;
+	margin-top: -12%;
+}
+
+.road-6 {
+
+	margin-left: 32%;
+	height: 215px;
+}
+
+.road-7 {
+	width: 900px;
+	margin-left: 14%;
+}
+
+.road-8 {
+	height: 75px;
+	margin-left: 64%;
+}
+
+.finish-flags {
+	margin-left: 56%;
+	margin-top: -4%;
+}
+
+
+
+.game-ul-item,
+.finish {
+	visibility: hidden;
+
+}
+
+
+
+
+.icon-start:hover+.game-ul>.game-ul-item:first-child {
+	visibility: visible;
+}
+
+.game-ul-item:hover+.game-ul-item,
+.game-ul-item:hover {
+	visibility: visible;
+}
+
+/* .game-ul-item:hover+.game-ul-item,
+.game-ul-item >.finish {
+	visibility: visible;
+} */
+
+
+
+/* .game-ul:has(:last-child:hover)~.finish-flags{
+	visibility: visible;
+} */
+
+
+
+.game-ul:has(.road-8:hover)~.finish,
+.finish:hover { 
+	visibility: visible;
+}
+/* .road-8:hover~.finish,
+.finish{
+	visibility: visible;
+} */
+
+/* .game-ul:last-child:hover~.finish,
+.finish:hover{
+	visibility: visible;
+} */
+/* .game-ul:last-child:hover ~.finish{
+		visibility: visible;
+	} */

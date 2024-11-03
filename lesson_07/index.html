@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Homework 07</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+
+<body>
+	<div class="wrapper">
+		<h1>Домашня робота - УРОК 07</h1>
+		<header class="header">Зміст</header>
+		<main class="page">
+			<div class="conteiner-01">
+				<div class="card01">
+					some card text
+				</div>
+				<a href="#" class="link"> <span>some link</span></a>
+
+				<div class="block02">
+					<a href="#" class="link02">натисни тут</a>
+				</div>
+
+				<div class="block03">
+					<a href="#" class="link02">натисни тут 2</a>
+				</div>
+
+				<div class="block04" title="тут текст не відображається через неправильну вкладеність">
+					<p class="text__block04">деякий текст</p>
+				</div>
+
+				<div class="block05">
+					<p class="text__block05">some text 2</p>
+				</div>
+
+				<div class="block06">
+					<a href="http://google.com" class="link06">використання <mark>:active</mark> (колір після натискання буде
+						блакитним)</a>
+
+
+				</div>
+				<a href="http://google.com" target="_blank" class="link-button">Кнопка з
+					псевдоелементом<mark>:visited</mark></a>
+
+				<div class="button-wrapper">
+					<a href="http://google.com" target="_blank" class="button-visited">Кнопка з псевдоелементом
+						<mark>:visited</mark></a>
+				</div>
+
+				<!-- :focus, :focus-visible Звернення до 
+	елементу у стані "фокусу" -->
+
+				<a href="#" class="link-focus">кнопка з псевдоелементом <mark>:focus</mark></a>
+				<a href="#" class="link-focus-visible">кнопка з псевдоелементом <mark>:focus-visible</mark></a>
+
+
+				<!-- :target
+				Звернення до елемента у стані
+				"ефекту від посилання з іншого об'єкту" -->
+
+				<a href="#hidden-block" class="show-block">
+					показати блок з використанням псевдоелементу <mark>:target</mark> </a>
+
+				<div class="block-for-showing" id="hidden-block">
+					ПРИВІТ!!! Я прихований блок, що відобажається завдяки псевдоелементу :target
+				</div>
+			</div>
+
+			<div class="conteiner-02">
+				<h2 class="subtitle02">Псевдокласи положення в коді</h2>
+				<div class="code-position">
+					<!-- <p>1___Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro sequi optio dicta! Repellendus
+						totam deserunt nesciunt possimus, natus sequi nulla porro cumque exercitationem, a quo earum ea sit,
+						voluptatibus ad?</p>
+					<p>
+						2___ Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat qui ipsa nisi similique
+						sapiente aut saepe placeat. Sunt porro accusantium facilis molestiae laboriosam voluptas sapiente
+						repellendus blanditiis a, dicta odio.
+					</p>
+					<p>3____ Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum corporis at iusto voluptas
+						aliquam soluta sed consequuntur illum exercitationem impedit asperiores quasi commodi magni, nisi
+						fugiat et, inventore quia earum.</p> -->
+					<span title="цей елемент коричневий бо на нього впливає ( *:first-child )">SPAN____some text in
+						span</span>
+					<ul class="list__conteiner-02">
+						<li class="list-item__conteiner-02" title="це елемент фіолетовий, бо на нього впливає li:first-child">
+							Перший пункт списку</li>
+						<li class="list-item__conteiner-02">Другий пункт списку</li>
+						<li class="list-item__conteiner-02" title="це елемент зелений, бо на нього впливає :nth-child(3)">
+							Третій пункт списку</li>
+						<li class="list-item__conteiner-02">Четвертий пункт списку</li>
+						<li class="list-item__conteiner-02">П'ятий пункт списку</li>
+					</ul>
+					<p title="цей елементжовтий, бо на нього впливає ( p:first-of-type )">1___Lorem ipsum dolor sit amet
+						consectetur adipisicing
+						elit. Porro sequi optio dicta! Repellendus
+						totam deserunt nesciunt possimus, natus sequi nulla porro cumque exercitationem, a quo earum ea sit,
+						voluptatibus ad?</p>
+					<p>
+						2___ Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat qui ipsa nisi similique
+						sapiente aut saepe placeat. Sunt porro accusantium facilis molestiae laboriosam voluptas sapiente
+						repellendus blanditiis a, dicta odio.
+					</p>
+					<p title="цец елемент зелений бо на нього впливає ( p:nth-child(5) )">3____ Lorem ipsum dolor sit amet
+						consectetur, adipisicing elit. Nostrum corporis at iusto voluptas
+						aliquam soluta sed consequuntur illum exercitationem impedit asperiores quasi commodi magni, nisi
+						fugiat et, inventore quia earum.</p>
+					<p>4_____ Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum corporis at iusto voluptas
+						aliquam soluta sed consequuntur illum exercitationem impedit asperiores quasi commodi magni, nisi
+						fugiat et, inventore quia earum.</p>
+
+				</div>
+
+
+
+
+
+			</div>
+
+			<div class="conteiner-03">
+				<h2 class="subtitle02">Алгоритми NTH</h2>
+				<div class="algorithmi">
+					<span>тут є якийсь SPAN</span>
+					<p>(1) some first text</p>
+					<p>(2) some second text</p>
+					<p>(3) some third text</p>
+					<p>(4) some fourth text</p>
+					<p>(5) some fifth text</p>
+					<p>(6) some sixth text</p>
+
+					<ul>
+						<li>1-LI_text_ Lorem ipsum dolor sit amet.</li>
+						<li>2-LI_text_ Lorem ipsum dolor sit amet.</li>
+						<li>3-LI_text_ Lorem ipsum dolor sit amet.</li>
+						<li>4-LI_text_ Lorem ipsum dolor sit amet.</li>
+						<li>5-LI_text_ Lorem ipsum dolor sit amet.</li>
+						<li>6-LI_text_ Lorem ipsum dolor sit amet.</li>
+						<li>7-LI_text_ Lorem ipsum dolor sit amet.</li>
+						<li>8-LI_text_ Lorem ipsum dolor sit amet.</li>
+						<li>9-LI_text_ Lorem ipsum dolor sit amet.</li>
+						<li>10-LI_text_ Lorem ipsum dolor sit amet.</li>
+						<li>11-LI_text_ Lorem ipsum dolor sit amet.</li>
+						<li>12-LI_text_ Lorem ipsum dolor sit amet.</li>
+					</ul>
+
+				</div>
+
+				<div class="class-not">
+					<h3>Псевдоклас :NOT</h3>
+					<span>тут є якийсь SPAN___</span>
+					<p>(1) some first text</p>
+					<p>(2) some second text</p>
+					<span>тут ще якийсь другий SPAN</span>
+					<p>(3) some third text</p>
+					<p class="without-color" title="я не пофарбванний, бо до мене застосований псевдоклас :NOT">(4) some
+						fourth text</p>
+					<p>(5) some fifth text</p>
+					<p title="в мене нема нижнього margin, оскільки до мене застосували псевдоелемент :NOT">(6) some sixth
+						text</p>
+					<!-- <a href="#"> some link</a> -->
+				</div>
+
+			</div>
+
+			<div class="conteiner-04">
+				<h2 class="subtitle02">Псевдоклас присутності в коді :has</h2>
+
+				<div class="block-has-test">
+					<p>Lorem ipsum dolor sit amet.</p>
+					<p>Lorem ipsum dolor sit amet consectetur.</p>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+				</div>
+				<div class="block-has-test" title="я зелений бо до мене застосували тег присутності :has">
+					<p>Lorem ipsum dolor sit amet.</p>
+					<span>some tag SPAN</span>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam.</p>
+					<a href="#">some link</a>
+				</div>
+
+			</div>
+
+			<div class="conteiner-05">
+
+				<h2> Title___видалення останього відступу через " <mark>*:not(:last-child)</mark> " </h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, rerum! Aliquam ab perferendis quia
+					maxime non nobis dolor accusantium? Quas, molestiae laborum id dicta sed tempora recusandae voluptatem
+					libero minus!</p>
+				<img src="img/cat-laptop.svg" alt="cat with laptop" class="conteiner-05__photo">
+				<a href="#">link</a>
+				<p>Lorem ipsum dolor sit amet.</p>
+				<a href="#">link #2</a>
+				<span>some tag span</span>
+				<h3>subtitle03</h3>
+			</div>
+
+			<div class="conteiner-06">
+				<h2> Title____останні відступи забрано через <mark>conteiner-06 > *:last-child </mark>, базові відступи
+					margin задано через
+					<mark>
+						.conteiner-06 >* {
+						margin-bottom: 20px;}
+					</mark>
+				</h2>
+
+				<p>TAG____P____Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, rerum! Aliquam ab
+					perferendis quia
+					maxime non nobis dolor accusantium? Quas, molestiae laborum id dicta sed tempora recusandae voluptatem
+					libero minus!</p>
+				<img src="img/boat.svg" alt="boat" class="conteiner-06__photo">
+				<a href="#">link</a>
+				<p>TAG____P____ Lorem ipsum dolor sit amet.</p>
+				<a href="#">link #2</a>
+				<p> якийсь додатквий тег P</p>
+			</div>
+
+			<div class="homework">
+
+				<div class="timeline__wrapper">
+					<div class="timeline">
+						<div class="timeline__item01">
+							<h3 class="timeline__subtitle03">Jan 2023</h3>
+							<h2 class="timeline__subtitle02">Research & discovery</h2>
+							<p class="timeline__text">Et arcu aliquam viverra felis rhoncus vitae arcu eget urna viverra massa
+								nullaolmerolil fermentum congue ultrices.</p>
+						</div>
+						<div class="timeline__item02">
+							<h3 class="timeline__subtitle03">Feb 2023</h3>
+							<h2 class="timeline__subtitle02">Product development</h2>
+							<p class="timeline__text">Libero sed nibh dictumst viverra tincidunt nulla risusolm neque lorem sed
+								elementum adipiscing purus massa.</p>
+						</div>
+						<div class="timeline__item03">
+							<h3 class="timeline__subtitle03">Apr 2023</h3>
+							<h2 class="timeline__subtitle02">Product launch</h2>
+							<p class="timeline__text">In diam aenean nunc amet faucibus commodo mattisole tincidunt euismod
+								quis gravida tellus eros venenatis.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="pricing__wrapper">
+					<div class="card__wrapper">
+						<div class="card">
+
+							<h3>Basic</h3>
+							<p class="price">$99</p>
+							<P class="billing">Billed monthly</P>
+						</div>
+						<ul class="pricing__list">
+							<li class="pricing__list-item">All analytics features</li>
+							<li class="pricing__list-item">Up to 250,000 tracked visits</li>
+							<li class="pricing__list-item">Normal support</li>
+							<li class="pricing__list-item">Up to 3 team members</li>
+
+						</ul>
+					</div>
+				</div>
+
+				<div class="agency-wrapper">
+					<img class="agency__main-photo" src="img/portfolio-teamplate/main-photo.png" alt="boy and girl agency">
+					<div class="agency__text-content">
+
+						<div class="agency__text-content-block01">
+							<h4 class="agency__subtitle04">Agency provides a full service range including technical skills,
+								design, business understanding.</h4>
+							<p class="agency__text">Outsource your digital marketing efforts, instead of handling in-house.
+								They can provide your business with a variety of
+								digital solutions to promote your product or service online and help you.</p>
+						</div>
+
+						<div class="agency__text-content-block02">
+							<h3 class="agency__subtitle03">Promote your product</h3>
+							<p class="agency__text">Ability to put themselves in the merchant's shoes. It is meant to partner
+								on the long run, and
+								work as an extension of
+								the merchant's team.</p>
+							<ul class="agency__ul-list">
+								<li class="agency__ul-list-item">Digital marketing</li>
+								<li class="agency__ul-list-item">Efforts instead</li>
+								<li class="agency__ul-list-item">Handling in-house</li>
+							</ul>
+							<p class="agency__text">A digital agency is a business you hire to outsource your digital marketing
+								efforts, instead of
+								handling in-house. They
+								can provide your business with a variety of digital solutions to promote your product or service
+								online and help you.
+							</p>
+
+						</div>
+
+						<div class="agency__text-content-block03">
+							<h3 class="agency__subtitle03">Service online and help</h3>
+							<p class="agency__text">Put themselves in the merchant's shoes. It is meant to partner on the long
+								run, and work as an
+								extension of the
+								merchant's team.</p>
+
+							<ol class="agency__ol-list">
+								<li class="agency__li-list-item">Marketing efforts</li>
+								<li class="agency__li-list-item">Instead of handling</li>
+								<li class="agency__li-list-item">In-house</li>
+							</ol>
+
+							<p class="agency__text">Agency is a business you hire to outsource your digital marketing efforts,
+								instead of handling
+								in-house. They can
+								provide your business with a variety of digital solutions to promote your product or service
+								online and help you.</p>
+
+						</div>
+
+
+
+						<div class="quote-wapper">
+							<div class="quote">
+								<p class="quote-text">
+									Provide your business with a variety of digital solutions to promote your product or service
+									online and help you.
+								</p>
+							</div>
+						</div>
+
+						<p class="agency__text">Outsource your digital marketing efforts, instead of handling in-house. They
+							can provide your business with a variety of
+							digital solutions to promote your product or service online and help you.</p>
+					</div>
+
+				</div>
+
+			</div>
+			<div class="game-button-wrapper">
+				<a href="game.html" target="_blank" class="game-button">Грай тут</a>
+			</div>
+
+
+		</main>
+
+		<footer class="footer">
+
+		</footer>
+
+
+	</div>
+
+</body>
+
+
+</html>
