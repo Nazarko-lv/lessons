@@ -36,99 +36,95 @@
 } */
 
 /* батьківський блок зі стилями */
-.block-g {
-	background-color: pink;
-	color: white;
-	font-size: 50px;
-	border: 2px solid green;
-	border-radius: 10px;
-	padding: 15px;
-	/* max-width: 500px; */
-	/* margin: 0 auto; */
-}
 
-
-	
 
 /* друга версія */
-.game-wrap2{
+.game-wrap2 {
 	padding: 25px;
 	margin: 0 auto;
 	width: 1300px;
 	height: 640px;
 	background-color: rgb(255, 145, 0);
-		box-shadow: 0 0 15px green;
-		border-radius: 15px;
+	box-shadow: 0 0 15px green;
+	border-radius: 15px;
 }
 
-.game-ul-item:nth-child(odd){
+.game-ul-item:nth-child(odd) {
 	background: url("../img/game/road-horizontal.svg") center / 450px 120px no-repeat;
 	height: 35px;
 
 }
-.game-ul-item:nth-child(even){
+
+.game-ul-item:nth-child(even) {
 	background: url("../img/game/road-vertical.svg") center / cover no-repeat;
 	width: 50px;
 }
-.icon-start{
+
+.icon-start {
 	display: inline-block;
 }
-.start-img{
+
+.start-img {
 	height: 100px;
-	margin-left: 69%; 
+	margin-left: 69%;
 
 }
-.game-ul{
+
+.game-ul {
 	margin-top: -70px;
 }
+
 /* координати кожної "дороги" */
 
-.road-2{
+.road-2 {
 
-margin-left: 64%;
-height: 200px;
-}
-.road-3{
-width: 200px;
-margin-left: 52%;
+	margin-left: 64%;
+	height: 200px;
 }
 
-.road-4{
+.road-3 {
+	width: 200px;
+	margin-left: 52%;
+}
+
+.road-4 {
 
 	height: 150px;
 	margin-left: 52%;
 	margin-top: -12%;
 }
 
-.road-5{
+.road-5 {
 	width: 250px;
 	margin-left: 32%;
 	margin-top: -12%;
 }
-.road-6{
+
+.road-6 {
 
 	margin-left: 32%;
 	height: 215px;
 }
-.road-7{
-	width: 900px;	
+
+.road-7 {
+	width: 900px;
 	margin-left: 14%;
 }
-.road-8{
-height: 75px;
-margin-left: 64%;
+
+.road-8 {
+	height: 75px;
+	margin-left: 64%;
 }
 
-.finish-flags{
+.finish-flags {
 	margin-left: 56%;
 	margin-top: -4%;
-} 
+}
 
 
 
 .game-ul-item,
-.finish
-{
+.finish {
 	visibility: hidden;
 
 }
@@ -140,7 +136,10 @@ margin-left: 64%;
 	visibility: visible;
 }
 
-.game-ul-item:hover+.game-ul-item, .game-ul-item:hover{visibility: visible;}
+.game-ul-item:hover+.game-ul-item,
+.game-ul-item:hover {
+	visibility: visible;
+}
 
 /* .game-ul-item:hover+.game-ul-item,
 .game-ul-item >.finish {
@@ -155,11 +154,19 @@ margin-left: 64%;
 
 
 
-.game-ul:has(.road-8:hover)~.finish, 
-finish:hover {
-	visibility: visible;}
+.game-ul:has(.road-8:hover)~.finish,
+.finish:hover { 
+	visibility: visible;
+}
+/* .road-8:hover~.finish,
+.finish{
+	visibility: visible;
+} */
 
-
-	/* .game-ul:last-child~.finish{
+/* .game-ul:last-child:hover~.finish,
+.finish:hover{
+	visibility: visible;
+} */
+/* .game-ul:last-child:hover ~.finish{
 		visibility: visible;
 	} */
