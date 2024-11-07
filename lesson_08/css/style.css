@@ -20,6 +20,7 @@
 
 @import url("https://fonts.googleapis.com/css?family=Comic+Neue:300,300italic,regular,italic,700,700italic&display=swap");
 /* Підключення шрифтів локально */
+@import url("https://fonts.googleapis.com/css?family=Yatra+One:regular&display=swap");
 @import url("fonts.css");
 
 /* Скидання стилів */
@@ -33,8 +34,18 @@ overflow: hidden;
 padding-block: 10px;
 }
 
+.wrapper>:not(:last-child){
+	margin-bottom: 50px;
+
+}
+
 .page{
 
+}
+footer {
+	text-align: center;
+	font-family: 'Yatra One', serif;
+	font-size: 25px;
 }
 
 h1{
@@ -42,8 +53,9 @@ h1{
 	font-weight: 700;
 	text-shadow: 1px 1px 5px lightcoral;
 	text-align: center;
-	color:rgb(38, 0, 100); 
-	margin-bottom: 35px;
+	color:rgb(38, 0, 100);
+	margin-bottom: 25px; 
+
 	font-family: 'Comic Neue', sans-serif;
 }
 
@@ -55,7 +67,7 @@ h2{
 	/* text-decoration:underline ; */
 	text-shadow: 0.5px 1px 2px whitesmoke;
 	letter-spacing: 4px;
-	margin-bottom: 25px;
+	/* margin-bottom: 25px; */
 	padding-left: 25px;
 	text-align: center;
 	font-family: 'Comic Neue', sans-serif;
