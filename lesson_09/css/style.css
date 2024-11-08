@@ -1,0 +1,48 @@
+/* Підключення шрифтів */
+
+/* підключення через сайт  fonts.google.com/*/
+/* manrope regular */
+/* @import url("https://fonts.googleapis.com/css2?family=Manrope&display=swap");
+/* manrope semibold */
+/* @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@600&display=swap");
+/* manrope medium */
+/* @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap");
+/* manrope bold */
+/* @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@700&display=swap");  
+
+/* підключення через плагін GOOGLE в css import */
+/* @import url("https://fonts.googleapis.com/css?family=Manrope:regular,500,600,700,800&display=swap");  */
+
+/* @import url("https://fonts.googleapis.com/css?family=Epilogue:100,200,300,regular,500,600,700,800,900&display=swap"); */
+@import url("https://fonts.googleapis.com/css?family=Great+Vibes:regular&display=swap");
+
+@import url("https://fonts.googleapis.com/css?family=Pacifico:regular&display=swap");
+
+@import url("https://fonts.googleapis.com/css?family=Comic+Neue:300,300italic,regular,italic,700,700italic&display=swap");
+/* Підключення шрифтів локально */
+@import url("fonts.css");
+
+/* Скидання стилів */
+@import url("reset.css");
+
+/* Основні стилі */
+.wrapper{
+background: url("../img/vector/background.svg") center / cover no-repeat scroll;
+min-height: 100%;
+overflow: hidden;
+padding-block: 10px;
+}
+
+.page{
+
+}
+
+h1{
+	font-size: 55px;
+	font-weight: 700;
+	text-shadow: 1px 1px 5px lightcoral;
+	text-align: center;
+	color:rgb(38, 0, 100); 
+	margin-bottom: 35px;
+	font-family: 'Comic Neue', sans-serif;
+}
