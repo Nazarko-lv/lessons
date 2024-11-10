@@ -1,0 +1,639 @@
+/* Підключення шрифтів */
+
+/* підключення через сайт  fonts.google.com/*/
+/* manrope regular */
+/* @import url("https://fonts.googleapis.com/css2?family=Manrope&display=swap");
+/* manrope semibold */
+/* @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@600&display=swap");
+/* manrope medium */
+/* @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap");
+/* manrope bold */
+/* @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@700&display=swap");  
+
+/* підключення через плагін GOOGLE в css import */
+/* @import url("https://fonts.googleapis.com/css?family=Manrope:regular,500,600,700,800&display=swap");  */
+
+@import url("https://fonts.googleapis.com/css?family=Epilogue:100,200,300,regular,500,600,700,800,900&display=swap");
+
+
+@import url("https://fonts.googleapis.com/css?family=Comic+Neue:300,300italic,regular,italic,700,700italic&display=swap");
+
+@import url("https://fonts.googleapis.com/css?family=Rubik+Bubbles:regular&display=swap");
+
+@import url("https://fonts.googleapis.com/css?family=Doto&display=swap");
+
+
+
+/* Підключення шрифтів локально */
+@import url("fonts.css");
+
+/* Скидання стилів */
+@import url("reset.css");
+
+/* Основні стилі */
+.wrapper{
+/* background: url("../img/endless-constellation-2.svg") center / contain repeat scroll; */
+z-index: -10;
+background-color: rgba(130, 98, 133, 0.733);
+
+min-height: 100%;
+/* overflow: hidden; */
+padding-block: 10px;
+	
+overflow: clip;
+
+}
+
+.page {
+	
+}
+
+h1{
+	font-size: 55px;
+	font-weight: 700;
+	text-shadow: 1px 1px 5px lightcoral;
+	text-align: center;
+	/* color:rgb(38, 0, 100);  */
+	/* color: #fff; */
+	margin-bottom: 35px;
+	font-family: 'Comic Neue', sans-serif;
+}
+
+h2{
+	font-family: 'Rubik Bubbles' , serif;
+	font-size: 35px;
+	text-align: center;
+	color: #fff;
+}
+
+.main-subtitle{
+	margin-bottom: 25px;
+}
+
+h3{
+	font-family:'Rubik Bubbles', sans-serif;
+}
+
+
+.page__container>:not(:last-child) {
+	margin-bottom: 25px;
+	/* background: url("../img/parabolic-triangle-background.svg") center / cover	no-repeat; */
+}
+
+/* ========== Властивість Absolutle ========== */
+
+.absolute-block {
+	/* height: 180px; */
+	/* width: 350px; */
+
+	border: solid 5px rgb(230, 8, 212);
+	border-radius: 10px;
+	padding: 15px;
+	text-align: center;
+	overflow: auto;
+	margin: 0 auto;
+	box-shadow: 0 0 5px 15px greenyellow;
+}
+
+.absolute-block :not(:last-child) {
+	margin-bottom: 25px;
+}
+
+.absolute-block__item {}
+
+.absolute-block div:nth-of-type(1) {
+	background-color: rgb(26, 201, 26);
+	border: solid 2px grey;
+	border-radius: 5px;
+
+}
+
+.absolute-block div:nth-of-type(2) {
+	background-color: yellow;
+	border: solid 2px grey;
+	border-radius: 5px;
+
+}
+
+.absolute-block div:nth-of-type(3) {
+	background-color: rgb(255, 60, 0);
+	border: solid 2px grey;
+	border-radius: 5px;
+
+}
+
+.absolute-block div:nth-of-type(1):hover {
+	/* background-color: rgb(26, 201, 26);
+	border: solid 2px grey;
+	border-radius: 5px; */
+	position: absolute;
+	top: 10px;
+	left: 100px;
+
+}
+
+.absolute-block div:nth-of-type(1):hover::before {
+	/* background-color: rgb(26, 201, 26);
+	border: solid 2px grey;
+	border-radius: 5px; */
+	content: "position: absolute; top: 10px; left: 100px так як батьківський елемент має position: static, об'єкт позиціонується відносно тегу BODY";
+	font-size: 16px;
+	/* position: absolute;
+	top: 10px;
+	left: 100px; */
+	/* width: 100%; */
+}
+
+.absolute-block div:nth-of-type(2):hover {
+	/* background-color: rgb(26, 201, 26);
+	border: solid 2px grey;
+	border-radius: 5px; */
+	position: absolute;
+	top: 65px;
+	left: 10px;
+	z-index: -1;
+
+}
+
+.absolute-block div:nth-of-type(2):hover::before {
+	/* background-color: rgb(26, 201, 26);
+	border: solid 2px grey;
+	border-radius: 5px; */
+	content: "position: absolute; top: 65px; left: 10px; z-index: -1; так як батьківський елемент має position: static, об'єкт позиціонується відносно тегу BODY, а черз z-index-1; ховається під об'єкти.";
+	font-size: 16px;
+	top: 10px;
+	left: 100px;
+	/* width: 100%; */
+}
+
+.absolute-block div:nth-of-type(3):hover {
+	/* background-color: rgb(26, 201, 26);
+	border: solid 2px grey;
+	border-radius: 5px; */
+	position: absolute;
+	top: 50%;
+	left: 25%;
+	z-index: 1;
+
+
+}
+
+.absolute-block div:nth-of-type(3):hover::before {
+	/* background-color: rgb(26, 201, 26);
+	border: solid 2px grey;
+	border-radius: 5px; */
+	content: "position: absolute; top: 50%; left: 25%; z-index: 1; так як батьківський елемент має position: static, об'єкт позиціонується відносно тегу BODY";
+	font-size: 16px;
+	top: 10px;
+	left: 100px;
+	/* width: 100%; */
+
+
+}
+
+/* ========== Властивість RELATIVE========== */
+.relative-block {
+	width: 350px;
+	
+	border: solid 5px greenyellow;
+	border-radius: 10px;
+	padding: 15px;
+	text-align: center;
+	overflow: auto;
+	margin: 0 auto;
+}
+
+
+
+.relative-block--percentage{
+	height: 220px;
+}
+
+.relative-block :not(:last-child){
+	margin-bottom: 10px;
+}
+
+.relative-block__item {
+
+}
+
+.relative-block div:nth-of-type(1) {
+	background-color: yellow;
+	border: solid 2px grey;
+	border-radius: 5px;
+
+}
+
+.relative-block div:nth-of-type(2) {
+	background-color: rgb(0, 255, 170);
+	border: solid 2px grey;
+	border-radius: 5px;
+
+}
+.relative-block div:nth-of-type(3) {
+	background-color: rgb(0, 162, 255);
+	border: solid 2px grey;
+	border-radius: 5px;
+
+}
+
+
+.relative-block div:nth-of-type(2):hover::before {
+
+	content: " position: realative;  top 15px left 10px";
+	/* position: relative;
+	top: 10px;
+	left: 20px; */
+	color: red;
+}
+.relative-block div:nth-of-type(2):hover {
+
+	position: relative;
+	top: 15px;
+	left: 10px;
+	color:rgba(255, 255, 0, 0);
+}
+
+.relative-block div:nth-of-type(3):hover::before {
+
+	content: " position: realative;  bottom 15px right 10px";
+	/* position: relative;
+	top: 10px;
+	left: 20px; */
+	color: red;
+}
+
+.relative-block div:nth-of-type(3):hover {
+
+	position: relative;
+	bottom: 15px;
+	right: 10px;
+	color: rgba(255, 255, 0, 0);
+}
+
+.relative-block div:nth-of-type(1):hover::before {
+
+	content: " position: realative;  bottom 15px right 20px; z-index: -1";
+	/* position: relative;
+	top: 10px;
+	left: 20px; */
+	color: red;
+}
+
+.relative-block div:nth-of-type(1):hover {
+	position: relative;
+	top: 15px;
+	right: 10px;
+	color: rgba(255, 255, 0, 0);
+	z-index: 1;
+}
+
+.relative-block--percentage div:nth-of-type(1):hover {
+	position: relative;
+	top: 15px;
+	right: 10px;
+	color: rgba(255, 255, 0, 0);
+	z-index: 2;
+}
+
+.realative-block--percentage div:nth-of-type(1):hover::before {
+
+	content: " position: realative;  bottom 15% right 10px; z-index: 2";
+	color: red;
+}
+
+.relative-block--percentage div:nth-of-type(2):hover::before {
+
+	content: " position: realative;  top 13% left 5% z-index: -1";
+
+	color: red;
+}
+
+.relative-block--percentage div:nth-of-type(2):hover {
+
+	position: relative;
+	top: 10%;
+	left: 5%;
+	color: rgba(255, 255, 0, 0);
+	z-index: -1;
+}
+
+
+.relative-block--percentage div:nth-of-type(3):hover::before {
+
+	content: " position: realative;  bottom 45% z-index: -1";
+
+	color: red;
+}
+
+.relative-block--percentage div:nth-of-type(3):hover {
+
+	position: relative;
+	bottom: 45%;
+	color: rgba(255, 255, 0, 0);
+	z-index: -1;
+}
+
+/* ========== Властивість Fixed========== */
+.fixed{
+	text-align: center;
+
+	margin: 0 auto;
+
+	}
+
+	.fixed img{
+		width: 35px;
+		height: 35px;
+		display: block;
+		
+	}
+
+.fixed-btn{
+	position: fixed;
+	bottom: 10%;
+	right: 25px;
+	text-shadow: 5px 5px 15px  #610f0f;
+	z-index: 50;
+	
+	
+}
+
+.fixed-btn:hover {
+
+	border: dotted 2px #610f0f;
+	border-radius: 0 15px;
+	padding: 5px;
+	color: bisque;
+	background-color: blueviolet;
+}
+.fixed-btn:active{
+		scale: 1.1;
+}
+
+.absolute-block {
+	/* height: 180px; */
+	/* width: 350px; */
+
+	border: solid 5px rgb(230, 8, 212);
+	border-radius: 10px;
+	padding: 15px;
+	text-align: center;
+	overflow: auto;
+	margin: 0 auto;
+	box-shadow: 0 0 5px 15px greenyellow;
+}
+
+/* ============Властивість Sticky============= */
+
+.sticky-block{
+	text-align: center;
+	max-width: 350px;
+	height: 100px;
+	overflow: auto;
+	margin: 0 auto;
+	border: solid 5px #610f0f;
+	padding: 5px;
+	border-radius: 10px 0;
+
+}
+
+.sticky-block * {
+	margin-bottom: 15px;
+
+
+}
+
+.sticky-block__item {
+	position: sticky;
+	top: -2px;
+}
+
+.sticky-block div:nth-of-type(1) {
+	background-color: rgb(26, 201, 26);
+	border: solid 2px grey;
+	border-radius: 5px;
+
+
+}
+
+.sticky-block div:nth-of-type(2) {
+	background-color: yellow;
+	border: solid 2px grey;
+	border-radius: 5px;
+	/* position: sticky; */
+}
+
+.sticky-block div:nth-of-type(3) {
+	background-color: rgb(255, 60, 0);
+	border: solid 2px grey;
+	border-radius: 5px;
+		/* position: sticky; */
+
+}
+
+/* ============Стилі для макету з FIGMA */
+.block-images--header{
+	inline-size: 570px;	
+	block-size: 601px;
+	background-color: #28293E;
+	margin: 0 auto;
+	position: relative;
+	border-radius: 10px;
+	margin-bottom: 35px;
+}
+.block-images--header::before {
+	content: '';
+	width: 370px;
+	height: 370px;
+	border-radius: 50%;
+	background-color: #32334C;
+	position: absolute;
+	top: 115.5px;
+	left: 100px;
+}
+
+/* spiral */
+/* .block-images--header::before {
+	content: '';
+	max-width: 142px;
+	max-height: 73px;
+	background: url("../img/content/spiral.svg") no-repeat;
+position: absolute;
+left: 0;
+top: 341px;
+
+} */
+
+
+
+.laptop-wrap--color{
+	position: absolute;
+	top: 0;
+	left: 0;
+	max-width: 246px;
+	max-height: 305px;
+
+}
+
+.images-laptop{
+	max-width: 255px;
+	max-height: 265px;
+	position: absolute;
+	bottom: 16px;
+	left:	21px;
+}
+
+.laptop-wrap--color::before {
+	content: "";
+	width: 246px;
+	height: 305px;
+/* background: url("../img/content/laptop-backgtound.svg")  0 0 / auto no-repeat; */
+background-color: #B550F8;
+border-radius: 50% 50% 6px 6px / 40.33% 40.33% 6px 6px;
+}
+
+/* .images-laptop-mask{
+max-width: 246px;
+max-height: 305px;
+position: relative;
+top: 0px;
+right: 259px;
+}  */
+/* .images-laptop-mask {
+max-width: 246px;
+max-height: 305px;
+position: relative;
+top: 0px;
+left: -45.4%;
+} */
+
+.designer-wrap--color{
+	max-width: 246px;
+	max-height: 305px;
+	position: absolute;
+	right: 0px;
+	top: 189px;
+}
+.designer-wrap--color::before{
+content: "";
+width: 246px;
+height: 305px;
+/* background: url("../img/content/designer-mask.svg") 0 0 / auto no-repeat; */
+background-color: #F7CC47;
+/* border-radius: 123px 123px 6px 6px; */
+border-radius: 50% 50% 6px 6px / 40.33% 40.33% 6px 6px;
+}
+
+.images-designer{
+	border-radius: 6px;
+	max-width: 246px;
+	max-height: 269px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+.images-oval-star{
+	max-width: 112px;
+	max-height: 112px ;
+	position: absolute;
+	right: 155px;
+	top: 40px;
+}
+
+.images-cloud{
+max-width: 112px;
+max-height: 82px;
+position: absolute;
+right: 0;
+top: 80px;
+}
+
+.images-spiral{
+	max-width: 142px;
+	max-height: 73px;
+	position: absolute;
+	left: 0;
+	top: 341px;
+}
+
+.images-card{
+max-width: 214px;
+max-height: 112px;
+position: absolute;
+left: 56px;
+top: 431px;
+}
+
+.images--arrow{
+max-width: 94px;
+max-height: 35px;
+	position: absolute;
+	top: 543px;
+	left: 314px;
+}
+
+
+
+
+/* =======card portfolio ======= */
+
+.sofa-img{
+	max-width: 456px;
+	max-height: 576px;
+}
+
+.portfolio{
+	text-align: center;
+
+}
+.portfolio__wrapper{
+	display: inline-block;
+	position: relative;
+	top: 0;	
+	left: 0;
+}
+
+.tag{
+	font-family:'Epilogue', sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 32px;
+	padding: 5px 16px;
+	background-color: #fff ;
+	border-radius: 19px;
+	display: inline-block;
+}
+
+.tag--sofa {
+position: absolute;
+bottom: 122px;
+left: 48px;
+
+}
+
+
+.portfolio__title{
+	text-transform: uppercase;
+	font-family: 'Epilogue', sans-serif;
+	font-size: 40px;
+	font-style: normal;
+	font-weight: 800;
+	line-height: 48px;
+	
+}
+
+.portfolio__title--sofa{
+position: absolute;
+left: 48px;
+bottom: 51px;
+}
+
+.portfolio__wrapper:hover{
+	opacity: 0.69;
+	background-color: #5C2000;;
+
+}
+
