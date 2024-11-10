@@ -633,7 +633,51 @@ bottom: 51px;
 
 .portfolio__wrapper:hover{
 	opacity: 0.69;
-	background-color: #5C2000;;
+	background-color: #5C2000;
 
 }
 
+.tag-link {
+	font-family: 'Epilogue', sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 32px;
+	padding: 5px 16px;
+	background-color: #fff;
+	border-radius: 19px;
+	display: inline-block;
+
+}
+
+.tag-link--sofa{
+		margin-bottom: 24px;
+}
+
+.tag-link:hover{
+	background-color: #28293E;
+	color:#fff}
+
+.label-link{
+		text-transform: uppercase;
+			font-family: 'Epilogue', sans-serif;
+			font-size: 40px;
+			font-style: normal;
+			font-weight: 800;
+			line-height: 48px;
+			color: #fff;
+			
+}
+
+.label-link:hover{
+	text-decoration: underline;
+}
+
+.portfolio__content{
+	position: absolute;
+	inset-inline-start: 48px;
+	/* inset-inline-end: 48px; */
+	/* inset-inline: 48px; */
+	bottom: 51px;
+	text-align: left;
+}
