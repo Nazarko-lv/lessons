@@ -1,0 +1,1155 @@
+/* Підключення шрифтів */
+
+/* підключення через сайт  fonts.google.com/*/
+/* manrope regular */
+/* @import url("https://fonts.googleapis.com/css2?family=Manrope&display=swap");
+/* manrope semibold */
+/* @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@600&display=swap");
+/* manrope medium */
+/* @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap");
+/* manrope bold */
+/* @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@700&display=swap");  
+
+/* підключення через плагін GOOGLE в css import */
+/* @import url("https://fonts.googleapis.com/css?family=Manrope:regular,500,600,700,800&display=swap");  */
+
+/* @import url("https://fonts.googleapis.com/css?family=Epilogue:100,200,300,regular,500,600,700,800,900&display=swap");
+
+
+@import url("https://fonts.googleapis.com/css?family=Comic+Neue:300,300italic,regular,italic,700,700italic&display=swap");
+
+@import url("https://fonts.googleapis.com/css?family=Rubik+Bubbles:regular&display=swap");
+
+@import url("https://fonts.googleapis.com/css?family=Doto&display=swap");
+ */
+@import url("https://fonts.googleapis.com/css?family=Rowdies:regular,700&display=swap");
+
+@import url("https://fonts.googleapis.com/css?family=Kode+Mono:regular,500&display=swap");
+
+@import url("https://fonts.googleapis.com/css?family=Ruslan+Display:regular&display=swap");
+
+@import url("https://fonts.googleapis.com/css?family=Gabriela:regular&display=swap");
+
+
+/* Підключення шрифтів локально */
+@import url("fonts.css");
+
+/* Скидання стилів */
+@import url("reset.css");
+
+/* Основні стилі */
+.wrapper{
+/* background: url("../img/endless-constellation-2.svg") center / contain repeat scroll; */
+z-index: -10;
+background-color: rgba(0, 27, 18, 0.733);
+
+min-height: 100%;
+/* overflow: hidden; */
+padding-block: 10px;
+	
+overflow: clip;
+
+}
+
+.page {
+	padding: 15px
+}
+
+h1{
+	font-size: 55px;
+	font-weight: 400;
+	text-shadow: 2px 2px 3px rgba(240, 238, 128, 0.568);
+	text-align: center;
+	/* color:rgb(38, 0, 100);  */
+	/* color: #fff; */
+	margin-bottom: 35px;
+	font-family: 'Ruslan Display', sans-serif;
+}
+
+h2{
+	font-family: 'Gabriela' , serif;
+	font-size: 35px;
+	text-align: center;
+	color: #fff;
+}
+
+.main-subtitle-margin{
+	margin-bottom: 10px;
+	font-size: 30px;
+	text-decoration: underline;
+	text-decoration-style: dotted;
+}
+
+.main-subtitle{
+	margin-bottom: 25px;
+}
+
+h3{
+	font-family:'Rubik Bubbles', sans-serif;
+}
+
+
+.trasformation-2d{
+
+}
+
+h3,
+p {
+	padding: 2px;
+	font-size: 16px;
+}
+
+.trasformation-2d__container,
+.transformation-3d__container{
+	max-width: 1920px;
+	margin: 0 auto;
+	text-align: center;
+	padding-inline: 20px;
+
+}
+
+
+
+
+.trasformation-2d__item{
+	background-color: blueviolet;
+	width: 150px;
+	height: 150px;
+	display: inline-block;
+	border-radius: 10px;
+	box-shadow: 0 0 25px rgba(0, 204, 255, 0.384);
+	margin-inline: 5px;
+
+	margin-bottom: 25px;
+	font-size: 0;
+	vertical-align: top;
+}
+
+.trasformation-2d__type{
+	width: 150px;
+	height: 150px;
+	background-color: #fff;
+	border-radius: 10px;
+	font-size: 16px;
+	padding: 10px;
+	overflow: hidden;
+
+
+	
+
+}
+
+
+
+
+
+.trasformation-2d__type:hover{
+	/* color: rgb(11, 221, 11); */
+		box-shadow: 0 0 25px 10px;
+		color: rgb(11, 221, 11);
+	box-shadow: 0 0 25px 10px yellow;
+
+}
+
+/* ============блок 1 Translate============= */
+.trasformation-2d__item:nth-child(1):hover .trasformation-2d__type {
+
+	transform: translate(25px, 35px);
+}
+
+.trasformation-2d__item:nth-child(1):active .trasformation-2d__type {
+transform: translate(-10px, -15px);
+	transition: all 0.5s;
+
+
+}
+.trasformation-2d__item:nth-child(1):active .content-block:nth-child(1) {
+visibility: hidden;
+
+}
+
+.trasformation-2d__item:nth-child(1):hover .trasformation-2d__type::after {
+	content: 'Натисни на мене';
+	width: 100px;
+	height: 20px;
+	font-weight: 600;
+	color: red;
+}
+
+.trasformation-2d__item:nth-child(1):active .trasformation-2d__type::before {
+	content: 'A тепер я змістився вгору на -10px і вліво на -15px translate(-10px, -15px)' ;
+	width: 100px;
+	height: 20px;
+		color: red;
+	transition: all 1ms;
+}
+
+/* ============блок 2 Scale ============= */
+.trasformation-2d__item:nth-child(2):hover .trasformation-2d__type {
+
+	transform: Scale(1.5);
+}
+
+.trasformation-2d__item:nth-child(2):active .trasformation-2d__type {
+	transform: scale(0.75);
+	transition: all 0.5s;
+	
+}
+.trasformation-2d__item:nth-child(2):active .content-block {
+	visibility: hidden;
+
+}
+
+.trasformation-2d__item:nth-child(2):hover .trasformation-2d__type::after {
+	content: 'Натисни на мене';
+	width: 100px;
+	height: 20px;
+	font-weight: 600;
+	color: red;
+}
+
+.trasformation-2d__item:nth-child(2):active .trasformation-2d__type::before {
+	content: 'А тепер я зменшився на 0.75 scale(0.75)';
+	width: 100px;
+	height: 20px;
+	transition: all 1ms;
+	color: red;
+}
+
+
+
+/* ============блок 3 ROTATE============= */
+.trasformation-2d__item:nth-child(3):hover .trasformation-2d__type {
+
+	transform: rotate(45deg);
+}
+
+.trasformation-2d__item:nth-child(3):active .trasformation-2d__type{
+	transform: rotate(-65deg);
+	transition: all 0.5s;
+}
+
+.trasformation-2d__item:nth-child(3):active .content-block {
+	visibility: hidden;
+
+}
+
+.trasformation-2d__item:nth-child(3):hover .trasformation-2d__type::after {
+content: 'тицьни на мене';	
+width: 100px;
+height: 20px;
+font-weight: 600;
+color:red;
+letter-spacing: -1px;
+}
+
+.trasformation-2d__item:nth-child(3):active .trasformation-2d__type::before {
+	content: 'a тепер я повернувся в іншу сторону на 65 грдусів';
+	width: 100px;
+	height: 20px;
+	transition: all 1ms;
+	color: red;
+}
+
+/* ============блок 4 SKEW ============= */
+.trasformation-2d__item:nth-child(4):hover .trasformation-2d__type {
+
+	transform: Skew(10deg, 15deg);
+}
+
+.trasformation-2d__item:nth-child(4):active .trasformation-2d__type {
+	transform: Skew(-10deg, -35deg);
+	transition: all 0.5s;
+}
+
+.trasformation-2d__item:nth-child(4):active .content-block {
+	visibility: hidden;
+
+}
+
+
+.trasformation-2d__item:nth-child(4):hover .trasformation-2d__type::after {
+	content: 'Натисни на мене';
+	width: 100px;
+	height: 20px;
+	font-weight: 600;
+	color: red;
+}
+
+.trasformation-2d__item:nth-child(4):active .trasformation-2d__type::before {
+	content: 'А тепер я нахилився на Skew(-10deg, -35deg)';
+	width: 100px;
+	height: 20px;
+	transition: all 1ms;
+	color: red;
+}
+
+/* ============блок 5 MATRIX ============= */
+.trasformation-2d__item:nth-child(5):hover .trasformation-2d__type {
+
+	transform: matrix(0.75, 2, 3, 0.5, -5, -8);
+}
+
+.trasformation-2d__item:nth-child(5):active .trasformation-2d__type {
+	transform: translate(10px, 10px) scale(1.4) rotate(15deg) skew(10deg, 15deg);
+	transition: all 0.5s;
+}
+
+.trasformation-2d__item:nth-child(5):active .content-block {
+	visibility: hidden;
+
+}
+
+
+.trasformation-2d__item:nth-child(5):hover .trasformation-2d__type::after {
+	content: 'Натисни на мене';
+	width: 100px;
+	height: 20px;
+	font-weight: 600;
+	color: red;
+}
+
+.trasformation-2d__item:nth-child(5):active .trasformation-2d__type::before {
+	content: 'А тепер я знаю, що сталося: translate(10px, 10px) scale(1.4) rotate(15deg) skew(10deg, 15deg)';
+	width: 100px;
+	height: 20px;
+	transition: all 1ms;
+	color: red;
+	font-size: 14px;
+}
+/* ============блок 6 Rotate + transform origin ============= */
+
+.trasformation-2d__item:nth-child(6) *{
+		/* color: chocolate; */
+		font-size: 13px;
+}
+.trasformation-2d__item:nth-child(6):hover .trasformation-2d__type {
+
+	transform: rotate(-45deg);
+	transform-origin: top left;
+
+}
+
+.trasformation-2d__item:nth-child(6):active .trasformation-2d__type {
+	transform: rotate(15deg);
+	transform-origin: bottom;
+	transition: all 0.5s;
+}
+
+.trasformation-2d__item:nth-child(6):active .content-block {
+	visibility: hidden;
+
+}
+
+
+.trasformation-2d__item:nth-child(6):hover .trasformation-2d__type::after {
+	content: 'Натисни на мене';
+	width: 125px;
+	height: 20px;
+	font-weight: 600;
+	color: red;
+}
+
+.trasformation-2d__item:nth-child(6):active .trasformation-2d__type::before {
+	content: 'А зараз я повернувся на 15deg за годинниковою стрілкою з transform-origin: bottom;';
+	width: 100px;
+	height: 20px;
+	transition: all 1ms;
+	color: red;
+	font-size: 14px;
+}
+
+/* ============блок 7 Translate + transform origin ============= */
+
+.trasformation-2d__item:nth-child(7) * {
+	
+	font-size: 13px;
+}
+
+.trasformation-2d__item:nth-child(7):hover .trasformation-2d__type {
+
+	transform:skew(15deg, 10deg)
+	/* transform-origin: top ; */
+
+}
+
+.trasformation-2d__item:nth-child(7):active .trasformation-2d__type {
+	transform: rotate(15deg);
+	transform-origin: bottom;
+	transition: all 0.5s;
+}
+
+.trasformation-2d__item:nth-child(6):active .content-block {
+	visibility: hidden;
+
+}
+
+
+.trasformation-2d__item:nth-child(7):hover .trasformation-2d__type::after {
+	content: 'Натисни на мене';
+	width: 125px;
+	height: 20px;
+	font-weight: 600;
+	color: red;
+
+
+}
+
+.trasformation-2d__item:nth-child(7):active .trasformation-2d__type::before {
+	content: 'А зараз я повернувся на 15deg за годинниковою стрілкою з transform-origin: bottom;';
+	width: 100px;
+	height: 20px;
+	transition: all 1ms;
+	color: red;
+	font-size: 14px;
+}
+
+/* ==========3D-трансформації========= */
+
+.transformation-3d__container{
+	font-size: 0;
+	vertical-align: top;
+
+}
+.block3d {
+width: 150px;
+height: 150px;
+background-color: rgba(36, 222, 3, 0.526);
+display: inline-block;
+margin-right: 15px;
+margin-bottom: 15px;
+vertical-align: top;
+
+	
+}
+
+.block3d__item {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(205, 231, 75, 1);
+	display: block;
+	/* margin-right: 10px;
+	margin-bottom: 10px; */
+	font-size: 20px;
+	
+	text-align: center;
+	border-radius: 15px;
+	overflow: hidden;
+}
+
+.block3d__content{
+	font-size: 16px;
+	padding: 15px;
+
+}
+/* ==========Блок3Д 1 Rotate та Rotate3D */
+.block3d:nth-of-type(1) {
+	/* position: relative; */
+	perspective: 100px ;
+	perspective-origin: center ;
+
+	
+	
+}
+.block3d:nth-of-type(1):hover .block3d__item{
+
+	transform: rotatex(45deg); 
+		
+}
+
+.block3d:nth-of-type(1):active .block3d__item {
+
+	transform: rotate3D(10, 20, 50, -45deg);
+		border: solid 1px red;
+	
+}
+
+.block3d:nth-of-type(1):active .block3d__item::before {
+	content: 'rotate3D(10, 20, 50, -45deg)';
+	width: 120px;
+	height: 120px;
+	color: red;
+margin-top: 5px;
+
+
+}
+.block3d:nth-of-type(1):active .block3d__content {
+display: none;
+}
+.block3d:nth-of-type(1):active {
+	position: relative;
+	top: 1px;
+	z-index: 1;
+}
+
+
+.block3d:nth-of-type(1):hover .block3d__content:nth-of-type(1):after {
+	content: 'Натисни';
+	width: 125px;
+	height: 20px;
+	font-weight: 600;
+	color: red;
+	border: dashed 3px yellow;
+
+		
+}
+
+/* ==========Блок3Д 2 translate3D */
+.block3d:nth-of-type(2) {
+	/* position: relative; */
+	perspective: 125px;
+	perspective-origin:  left;
+
+}
+
+.block3d:nth-of-type(2):hover .block3d__item {
+
+	transform: translate3D(25px, 35px, -55px);
+
+}
+
+.block3d:nth-of-type(2):active .block3d__item {
+
+	transform: translate3D(10px, 20px, 50px);
+	border: solid 1px red;
+}
+
+.block3d:nth-of-type(2):active{
+	position: relative;
+	top: 1px;
+	z-index: 1;
+}
+
+
+
+
+
+.block3d:nth-of-type(2):active .block3d__item::before {
+	content: 'translate3D (10px, 20px, 50px)';
+	width: 100px;
+	height: 120px;
+	color: red;
+	margin-top: 5px;
+	
+}
+
+.block3d:nth-of-type(2):active .block3d__content {
+	display: none;
+}
+
+.block3d:nth-of-type(2):hover .block3d__content:nth-of-type(1):after {
+	content: 'Натисни';
+	width: 125px;
+	height: 20px;
+	font-weight: 600;
+	color:red;
+	border: dashed 3px yellow;
+
+
+}
+
+/* ==========Блок3Д 3 transform-style */
+.block3d:nth-of-type(3) {
+	position: relative;
+	perspective: 125px;
+	perspective-origin: left;
+	transform-style: preserve-3d;
+
+
+}
+.block3d:nth-of-type(3) *{
+	font-size: 13px;
+}
+
+
+.block3d:nth-of-type(3):hover .block3d__item {
+
+	/* transform: translate3D(10px, 20px, 50px); */
+	transform: rotateX(45deg);
+}
+
+
+.block3d:nth-of-type(3):hover {
+	position: relative;
+	top: 1px;
+	z-index: 1;
+}
+.block3d:nth-of-type(3):active .block3d__item {
+
+	transform: rotateY(12deg);
+	border: solid 1px red;
+}
+.block3d:nth-of-type(3):active .block3d__item::before {
+	content: 'transform: rotateY(12deg); transform-style: preserve-3d';
+	width: 100px;
+	height: 120px;
+	color: red;
+	margin-top: 5px;
+	font-size: 18px;
+
+}
+
+.block3d:nth-of-type(3):active .block3d__content {
+	display: none;
+}
+
+.block3d:nth-of-type(3):hover .block3d__content:nth-of-type(1):after {
+	content: 'Натисни';
+	width: 125px;
+	height: 20px;
+	font-weight: 600;
+	color: red;
+	border: dashed 3px yellow;
+
+
+}
+
+/* ==========Блок3Д 4 backface-visibility */
+.block3d:nth-of-type(4) {
+	/* position: relative; */
+	perspective: 125px;
+	perspective-origin: center;
+	/* transform-style: preserve-3d; */
+	
+
+
+}
+
+.block3d:nth-of-type(4) * {
+	font-size: 13px;
+}
+.block3d__item:nth-of-type(4){
+	background-color: white;
+}	
+
+
+
+
+.block3d:nth-of-type(4):hover .block3d__item {
+
+	/* transform: translate3D(10px, 20px, 50px); */
+	/* transform: rotateX(180deg); */
+	/* монетка */
+		transform: rotatex(180deg) scale(1, -1);
+		
+		/* transition: all 0.6s; */
+
+}
+
+.block3d:nth-of-type(4):active .block3d__item {
+
+	transform:  rotatex(180deg) scale(2, -2);
+	border: solid 1px red;
+transition: all 0.3s;
+
+}
+
+.block3d:nth-of-type(4):active .block3d__item::before {
+	content: '';
+		background: url("../img/money-front-5.webp") center / 150px 150px no-repeat;
+	width: 150px;
+	height: 150px;
+	color: red;
+	margin-top: -2px;
+	font-size: 18px;
+	
+}
+
+
+
+/* .block3d:nth-of-type(4):hover .block3d__content:nth-of-type(1)::before {
+	content: 'press';
+	
+	width: 125px;
+	height: 20px;
+	font-weight: 600;
+	color: red;
+	border: dashed 3px yellow;
+	padding: top 5px;
+} */
+
+.block3d:nth-of-type(4):hover .block3d__item:nth-of-type(1){
+	background-color: #ffffff00;
+}
+.block3d:nth-of-type(4) .block3d__item:nth-of-type(1) {
+	background-color: #ffffff00;
+}
+.block3d:nth-of-type(4) {
+	background-color: #ffffff00;
+}
+
+
+.block3d:nth-of-type(4):hover .block3d__item:nth-of-type(1)::before {
+	content: '';
+	background: url("../img/money-front-5.webp") center / 150px 150px no-repeat;
+	width: 150px;
+	height: 150px;
+	/* transform: rotateX(45deg); */
+}
+
+
+
+	.block3d,
+	.block3d__item{
+		transition: all 0.5s;
+	}
+
+
+/* ======монетка 10 гривень. Спроба №2 */
+.coin img{
+	max-width: 250px;
+	/* max-height: 250px; */
+}
+
+.coin{
+font-size: 25px;
+/* display: inline-block; */
+}
+.coin__wrapper {
+position: relative;
+	perspective: 2000px;
+	perspective-origin: center;
+	transform-style: preserve-3d;
+	display: inline-block;
+}
+
+.coin__averse{
+	/* transform: rotateY(180deg); */
+	/* transition: all 0.5s; */
+			position: absolute;
+				top: 0;
+				left: 0;
+		
+}
+
+.coin__reverse {
+		
+		visibility: hidden;
+
+	}
+
+	.coin__wrapper:hover .coin__averse{
+		/* transform: rotateY(180deg) scale(-1, 1); */
+		transform: rotateY(180deg);
+		backface-visibility: visible;
+		
+	}
+
+	.coin__wrapper:hover .coin__reverse {
+		transform: rotateY(0);
+		visibility: visible;
+
+	}
+
+.coin__averse,
+.coin__reverse{
+	transition: all 0.5s;
+}
+
+/* =========Спроба №3 */
+.money {
+text-align: center;
+margin-bottom: 50px;
+}
+.money img{
+	max-width: 250px;;
+}
+
+
+
+.money__wrap {
+	display: inline-block;
+position: relative;
+perspective: 500px;
+/* transform-style: preserve-3d; */
+}
+
+.money__back {
+transform: rotateY(-180deg);
+}
+
+.money__front {
+	position: absolute;
+	top: 0;
+	left: 0;
+	transform: rotateY(0deg);
+	backface-visibility: hidden
+}
+
+.money__wrap:hover .money__front{
+	transform: rotateY(180deg);
+	backface-visibility: hidden;
+}
+.money__wrap:hover .money__back {
+	transform: rotateY(0deg);
+	/* backface-visibility: hidden; */
+}
+
+
+.money__back, .money__front{
+	transition: all 0.5s;
+}
+
+/* автомобіль */
+
+.car {
+	padding: 25px;
+
+}
+
+.car__wrapper {
+	margin: 0 auto;
+	width: 600px;
+	height: 350px;
+	background-color: rgb(10, 233, 233);
+	border-radius: 16% 32% 20% 14% / 55% 50% 29% 30%;
+	position: relative;
+}
+.car__body {
+	position: relative;
+
+}
+.top-green{
+	width: 350px;
+	height: 120px;
+	border-radius: 16% 14% 35% 24% / 32% 49% 15% 42%;
+	background-color: chartreuse;
+	position: absolute;
+	top: 30px;
+	left: 60px;
+	/* z-index: 1; */
+}
+
+.right-d{
+	border-radius: 46% 2% 0% 50% / 70% 31% 40% 54%;
+	background-color: rgb(10, 233, 233);
+	height: 120px;
+	width: 50px;
+	position: absolute;
+	left: 370px;
+	top: 25px;
+}
+
+.right-d--small {
+
+transform: scale(-1, 1) rotate(120deg) skew(20deg);
+top: 110px;
+left: 80px;
+height: 35px;
+width: 25px;
+
+}
+
+.right-d--small-2 {
+
+	transform: scale(-1, -1) rotate(90deg) skew(20deg);
+	top: 95px;
+	left: 60px;
+	height: 35px;
+	width: 25px;
+}
+
+.right-d--scale{
+	position: absolute;
+left: 350px;
+	top: 115px;
+	/* background-color: #fff; */
+	transform: rotate(120deg) scale(1.5);
+}
+
+.right-flower-pos1 {
+	position: absolute;
+	top: 115px;
+	right: 210px;
+	transform: rotate(35deg);
+
+}
+
+.flow {
+	width: 50px;
+	height: 20px;
+	/* background-color: #fff; */
+	background-color: rgb(10, 233, 233);
+	border-radius: 94% 2% 0% 50% / 77% 31% 40% 65%;
+	transform: rotate(25deg) translate(-5px, -2px);
+}
+
+.flow-mirror {
+transform: rotate(-25deg) translate(-5px, -2px);
+transform-origin: 3px 5px;
+}
+
+.window{
+	border-radius: 10% 64% 10% 10% / 10% 90% 10% 10%;
+	background-color: rgba(196, 248, 231, 0.954);
+	width: 105px;
+	height: 120px;
+	border: dashed 2px #777;
+}
+
+.window--pos{
+	position: absolute;
+	left: 430px;
+	top: 40px;
+}
+
+.middle-green{
+	width: 600px;
+	height: 75px;
+	border-radius: 10px 5px 15px 50px ;
+	background-color: chartreuse; ;
+}
+
+.middle-green--pos{
+	position: absolute;
+top: 175px;
+}
+
+.middle-blue{
+	width: 125px;
+	height: 50px;
+	border-radius: 49% 97% 10% 15% / 83% 91% 16% 1%;
+	background-color: rgb(10,233,233);
+	/* background-color: #fff; */
+}
+
+.middle-blue--pos1{
+position: absolute;
+top: 220px;
+left: 80px;
+}
+
+.middle-blue--pos2 {
+	position: absolute;
+	top: 220px;
+	left: 300px;
+	transform: scale(-1,1) rotate(15deg);
+}
+
+.right-flower-pos2{
+	position: absolute;
+		top: 225px;
+		right: 255px;
+		transform: rotate(35deg);
+}
+
+.right-flower-pos3 {
+	position: absolute;
+	top: 225px;
+	left: 10px;
+	transform: rotate(115deg) ;
+}
+
+.green-center{
+border-radius: 49% 97% 47% 58% / 23% 25% 72% 61%;
+background-color: chartreuse;
+width: 85px;
+height: 100px;
+}
+.green-center--pos1{
+position: absolute;
+left: 205px;
+top: 185px;
+}
+
+.orange-flow{
+	position: relative;
+}
+
+.orange-flow__petals{
+	border-radius: 34% 40% 28% 48% / 60% 60% 58% 61%;
+	background-color: rgb(255, 115, 0);
+	width: 25px;
+	height: 70px;
+	border: solid 2px #11111188;
+}
+.orange-flow__petals--pos1{
+	position: absolute;
+	transform: rotate(-45deg);
+	transform-origin: 0px  0px;
+}
+
+.orange-flow__petals--pos2 {
+	position: absolute;
+	transform: rotate(35deg);
+	transform-origin: 20px 0px;
+}
+.orange-flow__petals--pos3 {
+	position: absolute;
+	transform: rotate(95deg);
+	transform-origin: 14px 0px;
+}
+.orange-flow__petals--pos4 {
+	position: absolute;
+	transform: rotate(-95deg);
+	transform-origin: 5px 0px;
+}
+
+.orange-flow__petals--pos5 {
+	position: absolute;
+	transform: rotate(145deg);
+	transform-origin: 12px 0px;
+}
+
+.orange-flow__petals--pos6 {
+	position: absolute;
+	transform: rotate(225deg);
+	transform-origin: 5px -1px;
+}
+
+.orange-flow__cirle{
+border: solid 2px #1111119e;
+height: 20px;
+width: 20px;
+border-radius: 75% 25% 60% 40% / 38% 42% 58% 62%;
+background-color: rgb(255, 115, 0) ;
+position: absolute;
+top: -15px;
+}
+
+
+.orange-flow{
+	transform: scale(0.65);
+}
+.orange-flow--pos1{
+	position: absolute;
+	top: 220px;
+	left: 135px;
+	transform: scale(0.65);
+}
+
+.orange-flow--pos2 {
+	position: absolute;
+	top: 220px;
+	left: 535px;
+	transform: scale(0.45) ;
+	z-index: 1;
+}
+
+.green-center--pos2 {
+	position: absolute;
+	left: 475px;
+	top: 175px;
+	width: 75px;
+	height: 120px;
+	transform: rotate(-65deg);
+}
+
+.car__arc{
+	border-radius: 23% 28% 0% 0% / 38% 35% 30% 27%;
+	background-color: #111;
+	width: 150px;
+	height: 65px;
+
+}
+
+.car__wheels--pos1{
+	position: absolute;
+	top: 285px;
+	left: 85px;
+}
+.car__arc-pos1{
+	
+}
+.wheel-circle{
+width: 95px;
+height: 95px;
+border-radius: 50%;
+background-color: #342f2f;
+border: dotted 5px rgb(175, 129, 129);
+}
+.wheel-circle--pos1{
+	position: absolute;
+	top: 9px;
+	left: 25px;
+	
+}
+
+.wheel-circle-inner{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background-color: yellow;
+	
+}
+.wheel-circle-inner--pos1{
+	position: absolute;
+	top: 32px;
+	left: 48px;
+
+}
+
+.car__wheels--pos2{
+	position: absolute;
+	top: 285px;
+	left: 355px;
+
+}
+
+.lamp-front{
+	background-color: beige;
+	border-radius: 50% 50% 59% 41% / 59% 42% 58% 41%;
+	width: 35px;
+	height: 35px;
+	position: absolute;
+	top: 240px;
+	right: 7px;
+	border: solid 1px #111;
+}
+
+.lamp-back{
+	width: 15px;
+	height: 65px;
+	background-color: red;
+	border-radius: 5px 0 0 10px;
+	position: absolute;
+	top: 220px;
+	left: -10px;
+	transform: rotate(-5deg);
+}
+
+.name-of-car{
+	width: 230px;
+	height: 95px;
+}
+
+.car__name{
+	position: absolute;
+	top: 45px;
+	left:105px;
+		visibility: hidden;
+}
+
+.lamp-back__light{
+	transform: rotate(-90deg);
+	position: absolute;
+	left: -55px;
+		visibility: hidden;
+}
+
+.lamp-front__light{
+	height: 45px;
+	transform: rotate(-85deg);
+	position: absolute;
+	right: -70px;
+	top: -5px;
+	visibility: hidden;
+
+}
+
+.car__body:hover .lamp-back__light,
+.car__body:hover .lamp-front__light,
+.car__body:hover .car__name{
+	visibility: visible;
+}
+
+.car__body:active .orange-flow{
+	transform: rotate(270deg) scale(0.55);
+	transition: all 0.5s;
+}
+
+.car__body:active .front-light,
+.car__body:active .back-light{
+	transform: scale(1.5);
+}
+

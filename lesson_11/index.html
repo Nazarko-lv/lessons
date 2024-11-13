@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Homework 11</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="shortcut icon" href="favicon-logo-svg.svg">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header" id="header">
+								<h1 class="main-title">Домашня робота - УРОК 11</h1>
+					<h2 class="main-subtitle">Трансформації</h2>
+		</header>
+		<main class="page">
+			<div class="page__container">
+				<div class="trasformation-2d">
+					<h2 class="main-subtitle main-subtitle-margin">Трансформації 2D</h2>
+					<div class="trasformation-2d__container">
+
+						<!-- 1 -->
+						<div class="trasformation-2d__item">
+							<div class="trasformation-2d__type">
+							<div class="content-block">
+									<h3>translate (25px, 35px);</h3>
+								<p>Зміщення згори 25px, зліва 35px</p>
+							</div>
+							</div>
+						</div>
+
+						<!-- 2 -->
+						<div class="trasformation-2d__item">
+
+							<div class="trasformation-2d__type">
+								
+								<div class="content-block">
+									<h3>scale (1.5);</h3>
+									<p>Масштабування об'єкту в 1.5 рази</p>
+									
+								</div>
+							</div>
+						</div>
+						<!-- 3 -->
+						<div class="trasformation-2d__item">
+							<div class="trasformation-2d__type">
+
+								<div class="content-block">
+									<h3>rotate (45deg);</h3>
+									<p>Поворот об'єкту за годинниковою стрілкою на 45градусів</p>
+								</div>
+
+							</div>
+						</div>
+
+						<!-- 4 -->
+						<div class="trasformation-2d__item"> 
+							<div class="trasformation-2d__type">
+								<div class="content-block">
+									<h3>Skew (10deg, 15deg);</h3>
+									<p>Нахил по Х-10deg та по Y-15deg</p>
+								</div>
+							</div>
+					</div>
+
+					<!-- 5 -->
+						<div class="trasformation-2d__item">
+							<div class="trasformation-2d__type">
+								<div class="content-block">
+									<h3>Matrix;</h3>
+									<p>зі мною шось станеться</p>
+								</div>
+							</div>
+						</div>
+
+						<!-- 6 -->
+						<div class="trasformation-2d__item">
+							<div class="trasformation-2d__type">
+								<div class="content-block">
+									<h3>rotate (45deg);</h3>
+									<p>Поворот об'єкту проти годинникової стрілкою на 45градусів, але з віссю обертання transform-origin: top left;</p>
+								</div>
+							</div>
+						</div>
+
+				</div>
+				</div>
+			
+				<div class="transformation-3d">
+					<div class="transformation-3d__container">
+						<h2 class="main-subtitle main-subtitle-margin">Трансформації 3D</h2>
+						
+						<!-- 1 -->
+						<div class="block3d">
+							<div class="block3d__item">
+								<div class="block3d__content">
+									perspective:100px;
+									perspective-origin:center;
+									transform: RotateX (45deg);
+
+								</div>
+							</div>
+						</div>
+
+						<!-- 2 -->
+						<div class="block3d">
+							<div class="block3d__item">
+								<div class="block3d__content">
+								perspective:125px;
+								perspective-origin:center;
+								transform: translate3D(25px, 35px, -55px); 
+								</div>
+							</div>
+						</div>
+
+						<!-- 3 -->
+						<div class="block3d">
+							<div class="block3d__item">
+								<div class="block3d__content">
+									perspective:125px;
+									perspective-origin:center;
+									transform: rotateX(45deg);
+									transform-style: preserve-3d;
+								</div>
+							</div>
+						</div>
+
+						<!-- 4 -->
+						<!-- <div class="block3d">
+							<div class="block3d__item">
+								<div class="block3d__content">
+									Багато текст
+								</div>
+							</div>
+						</div> -->
+						<!-- 4 grn -->
+					<!-- <h3>Варіант 1</р> -->
+						<div class="block3d"> 
+						<h2>Спроба №1</h2>
+							<div class="block3d__item"><img src="img/money-back-5.webp" alt="5 гривень">
+								<div class="block3d__content">
+								
+								</div>
+							</div>
+						</div>
+
+						<div class="coin">
+							<h2>Спроба №2</h2>
+							<div class="coin__wrapper">
+								<div class="coin__averse"><img src="img/hryvnia-coin-10-averse.webp" alt="10 гривень аверс">
+								</div>
+								<div class="coin__reverse"><img src="img/hryvnia-coin-10-reverse.webp" alt="10 гривень реверс">
+								</div>
+							</div>
+						</div>
+										
+
+
+				
+					</div>
+				
+				</div>
+				
+				<div class="money">
+					<h2>Спроба № 3</h2>
+					<div class="money__wrap">
+						<div class="money__back"><img src="img/hryvnia-coin-10-reverse.webp" alt="10 hrn back"></div>
+						<div class="money__front"><img src="img/hryvnia-coin-10-averse.webp" alt="10hrn up"></div>
+					</div>
+				</div>
+
+				<!-- автомобіль -->
+				
+			<div class="car">
+				<div class="car__wrapper">
+					<div class="car__body">
+						<div class="top-green"></div>
+						<div class="right-d"></div>
+						<div class="wrapper__d-small">
+						<div class="right-d right-d--small"></div>
+						<div class="right-d right-d--small-2"></div>
+						</div>
+						<div class="right-flower right-flower-pos1">
+							<div class="flow"></div>
+							<div class="flow flow-mirror"></div>
+						</div>
+							<div class="window window--pos"></div>
+							<div class="middle-green middle-green--pos"></div>
+							<div class="middle-blue middle-blue--pos1"></div>
+							<div class="middle-blue middle-blue--pos2"></div>
+							<div class="right-flower right-flower-pos2">
+								<div class="flow"></div>
+								<div class="flow flow-mirror"></div>
+								
+							</div>
+							
+							<div class="right-flower right-flower-pos3">
+									<div class="flow"></div>
+									<div class="flow flow-mirror"></div>
+						</div>
+
+						<div class="green-center green-center--pos1"></div>
+						<div class="orange-flow orange-flow--pos1">
+							<div class="orange-flow__petals orange-flow__petals--pos1"></div>
+							<div class="orange-flow__petals orange-flow__petals--pos2"></div>
+							<div class="orange-flow__petals orange-flow__petals--pos3"></div>
+							<div class="orange-flow__petals orange-flow__petals--pos4"></div>
+							<div class="orange-flow__petals orange-flow__petals--pos5"></div>
+							<div class="orange-flow__petals orange-flow__petals--pos6"></div>
+							<div class="orange-flow__cirle"></div>
+						</div>
+						<div class="orange-flow orange-flow--pos2">
+							<div class="orange-flow__petals orange-flow__petals--pos1"></div>
+							<div class="orange-flow__petals orange-flow__petals--pos2"></div>
+							<div class="orange-flow__petals orange-flow__petals--pos3"></div>
+							<div class="orange-flow__petals orange-flow__petals--pos4"></div>
+							<div class="orange-flow__petals orange-flow__petals--pos5"></div>
+							<div class="orange-flow__petals orange-flow__petals--pos6"></div>
+							<div class="orange-flow__cirle"></div>
+						</div>
+
+						<div class="green-center green-center--pos2"></div>
+
+						<div class="lamp-front">
+							<div class="lamp-front__light"><img class="front-light" src="img/yellow-light.svg" alt=""></div>
+						</div>
+						<div class="lamp-back">
+							<div class="lamp-back__light"><img class="back-light" src="img/red-light_roup.svg" alt=""></div>
+						</div>
+						<div class="car__name"><img class="name-of-car" src="img/the-mystery-machine-removebg-preview.webp" alt="name car"></div>
+						
+					</div>
+					<div class="car__wheels car__wheels--pos1">
+						<div class="car__arc car__arc-pos1"></div>
+						<div class="wheel-circle wheel-circle--pos1"></div>
+						<div class="wheel-circle-inner wheel-circle-inner--pos1"></div>									
+					</div>
+					<div class="car__wheels car__wheels--pos2">
+								<div class="car__arc car__arc-pos1"></div>
+								<div class="wheel-circle wheel-circle--pos1"></div>
+								<div class="wheel-circle-inner wheel-circle-inner--pos1"></div>
+							</div>
+
+				</div>
+			</div>
+
+			
+
+
+				
+		</div>
+	</main>
+	</div>
+		<footer class="footer">
+			<p>&copy; 2024 Всі права захищені. Інформація надана для освітніх цілей.</p>
+		</footer>
+
+</body>
+
+
+</html>
