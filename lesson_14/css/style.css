@@ -186,6 +186,18 @@ transition: 0.35s ease-in-out;
 	transform: scale(0.9);
 }	
 
+/* Для Chrome, Safari, Edge, Opera */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Для Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
 
 /* ======== Стилі для темної форми ======== */
 
