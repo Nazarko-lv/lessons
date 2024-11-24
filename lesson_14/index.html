@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Homework 14</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="shortcut icon" href="favicon-logo-svg.svg">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header" id="header">
+		<h1 class="main-title">Домашня робота - УРОК 14</h1>
+		<h2 class="main-subtitle">HTML Форми</h2> 
+	</header>
+	
+	<main class="main">
+		<h3 class="subtitle03 subtitle03--margin">Personal Portfolio</h3>
+	<div class="personal-portfolio personal-portfolio--margin">
+		<p class="personal-portfolio__text">There are many variations of passages of Lorem Ipsu available,
+		but the majority have suffered alte.</p>
+		<form enctype="multipart/form-data" action="#" class="form-pp">
+			<input class="form-pp__input" type="text" name="Name" required placeholder="Name*">
+
+		<input class="form-pp__input" type="email" name="Email" required placeholder="Email*">
+			
+		<input class="form-pp__input" type="text" name="Location" placeholder="Location">
+
+			<div class="budget-wrapper">
+
+				<input class="form-pp__input budget" type="number" name="Budget" required placeholder="Budget*">
+				<input class="form-pp__input subject" type="text" name="Subject" required placeholder="Subject*">
+			</div>
+			
+			<textarea class="form-pp__textarea" name="Message" placeholder="Message*" required minlength="3"></textarea>
+			<button class="form-pp__button" type="submit">Submit
+			</button>
+			
+		
+		</form>
+		
+	</div>
+	<h3 class="subtitle03 subtitle03--margin">DarkThemeWebsite</h3>
+	<div class="dark-site">
+
+		<form action="#" class="dark-form" enctype="multipart/form-data">
+
+			<div class="dark-form__top">
+			<div class="dark-form__group">
+				
+				<label for="first-name" class="dark-form__label">First Name</label>
+				
+				<input type="text" name="form[first-name]"  required placeholder="Enter First Name" id="first-name"  class="dark-form__input">
+			</div>				
+			
+			<div class="dark-form__group">
+				<label for="last-name" class="dark-form__label">Last Name</label>
+				<input type="text" name="form[last-name]" required placeholder="Enter Last Name" id="last-name"
+					class="dark-form__input">
+			</div>
+			
+			<div class="dark-form__group">
+					<label for="email" class="dark-form__label">Email</label>
+					<input type="email" name="form[email]" required placeholder="Enter your Email" id="email"
+						class="dark-form__input">
+				</div>
+
+			<div class="dark-form__group">
+				<label for="tel" class="dark-form__label">Phone Number</label>
+				<input type="tel" name="form[tel]" required placeholder="Enter Phone Number" id="tel" class="dark-form__input">
+			</div>
+
+			<div class="dark-form__group">
+				<label for="message" class="dark-form__label">Message</label>
+				<textarea  name="form[message]" placeholder="Enter your Message" id="message" class="dark-form__textarea"></textarea>
+			</div>
+			</div>
+			<div class="dark-form__bottom">
+				<div class="dark-form__check">
+					<input class="checkbox-input"  id="check-01" name="form[]" type="checkbox" required>
+					<label class="checkbox-lable" for="check-01">I agree with Terms of Use and Privacy Policy</label>
+				</div>
+				<button class="dark-form__button" type="submit">Send Message</button>
+			</div>
+
+			</form>
+			
+		</div>
+		</main>
+	
+	
+	
+	
+
+	
+	<footer class="footer">
+	<p>&copy; 2024 Всі права захищені. Інформація надана для освітніх цілей.</p>
+	</footer>
+	
+</div>
+</body>
+</html>

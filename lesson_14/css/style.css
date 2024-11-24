@@ -1,0 +1,366 @@
+/* Підключення шрифтів */
+
+/* підключення через сайт  fonts.google.com/*/
+/* manrope regular */
+/* @import url("https://fonts.googleapis.com/css2?family=Manrope&display=swap");
+/* manrope semibold */
+/* @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@600&display=swap");
+/* manrope medium */
+/* @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap");
+/* manrope bold */
+/* @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@700&display=swap");  
+
+/* підключення через плагін GOOGLE в css import */
+@import url("https://fonts.googleapis.com/css?family=Manrope:regular,500,600,700,800&display=swap"); 
+
+@import url("https://fonts.googleapis.com/css?family=Epilogue:100,200,300,regular,500,600,700,800,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Comic+Neue:300,300italic,regular,italic,700,700italic&display=swap");
+
+@import url("https://fonts.googleapis.com/css?family=Rubik+Bubbles:regular&display=swap");
+
+@import url("https://fonts.googleapis.com/css?family=Doto&display=swap");
+
+@import url("https://fonts.googleapis.com/css?family=Work+Sans:regular,600&display=swap");
+
+/* Підключення шрифтів локально */
+@import url("fonts.css");
+
+/* Скидання стилів */
+@import url("reset.css");
+
+/* Основні стилі */
+body {
+	background-color: #141414;
+
+}
+
+
+.wrapper {
+	min-height: 100%;
+	overflow: clip;
+	/* hidden*/
+	display: flex;
+	flex-direction: column;
+}
+
+.wrapper > main {
+	flex-grow: 1;
+}
+
+footer{
+	text-align: center;
+}
+.main-title {
+	font-size: 55px;
+	font-weight: 700;
+	text-shadow: 1px 1px 5px lightcoral;
+	text-align: center;
+	margin-bottom: 35px;
+	font-family: 'Comic Neue', sans-serif;
+}
+
+.main-subtitle {
+	font-family: 'Rubik Bubbles', serif;
+	font-size: 35px;
+	text-align: center;
+	color: #fff;
+	margin-bottom: 25px;
+}
+
+
+.personal-portfolio{
+	color: #697484;
+	font-family: "Work Sans", sans-serif;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 24px;
+
+	padding: 15px;
+	max-width: 590px;	
+	margin: 0 auto;
+
+background-color: #fff;
+box-shadow: 10px 10px 5px;
+border-radius: 10px;
+}
+
+.personal-portfolio--margin{
+	margin-bottom: 50px;
+}
+
+.form-pp{
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+.budget-wrapper{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	gap: 24px;
+	flex-wrap: wrap;
+}
+.budget{
+	flex-basis:200px ;
+/* flex-basis: 35%; */
+}
+.subject{
+	flex-basis: 60%;
+}
+
+
+.form-pp__input{
+	outline: none;
+	padding-bottom: 14px;
+	border-bottom: 1.5px solid #E6E8EB;
+	transition: 0.3s ease-in-out;
+}
+
+.form-pp__input:focus,
+.form-pp__textarea:focus{
+border-bottom: 1.5px solid #A53DFF;
+}
+
+.form-pp__input:focus::placeholder,.form-pp__textarea:focus::placeholder{
+	color: #A53DFF;
+}
+
+
+.form-pp__textarea{
+	min-height: 48px;
+	outline: none;
+	padding-bottom: 14px;
+	border-bottom: 1.5px solid #E6E8EB;
+	resize: vertical;
+}
+.personal-portfolio__text{
+	margin-bottom: 50px;
+}
+
+.form-pp__button{
+	padding: 12px 24px;
+	border-radius: 4px;
+		background:  #A53DFF;
+
+	color: #FFF;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 24px;
+display: flex;
+gap: 12px;
+justify-content: center;
+align-items: center;
+transition: 0.35s ease-in-out;
+}
+
+.form-pp__button::after{
+	content: '';
+	width: 24px;
+	height: 24px;
+	background: url("../img/paper-plane-opt.svg") center / 100% no-repeat;
+	transition: 0.2s linear;
+
+}
+
+
+.form-pp__button:hover,
+.form-pp__button:focus
+{
+	color:greenyellow;
+	box-shadow: 0px 0px 10px black;
+}
+
+.form-pp__button:hover::after {
+	transform: skew(10deg);
+	fill: #A53DFF;
+}
+.form-pp__button:active::after {
+	transform: translateX(5px);	
+	fill: #A53DFF;
+}
+.form-pp__button:active{
+	transform: scale(0.9);
+}	
+
+
+/* ======== Стилі для темної форми ======== */
+
+.dark-site {
+	max-width: 976px;
+	margin: 0 auto	;
+	padding: 50px;
+	border-radius: 12px;
+	border: 1px solid #262626;
+	background: #0F0F0F;
+	color:  #999;
+
+	font-family: 'Manrope', sans-serif;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 150%;
+}
+
+.dark-form {
+	display: flex;
+	flex-direction: column;
+
+}
+
+.dark-form__top {
+	max-width: 100%;
+	margin-bottom: 50px;
+	display: flex;
+flex-wrap: wrap;
+gap: 50px;
+}
+
+.dark-form__group {
+	flex-basis: 411px;
+	flex-grow: 1;
+}
+
+.dark-form__label {
+	display: block;
+	margin-bottom: 16px;
+	color:  #FFF;
+	
+}
+
+.dark-form__input {
+	padding: 20px;
+	border-radius: 8px;
+	border: 1px solid  #262626;
+		background:  #141414;
+		transition: 0.4s ease-in;
+}
+
+.dark-form__textarea {
+	transition: 0.35s ease-in-out;
+	min-height: 163px;
+	resize: vertical;
+	padding: 20px;
+	border-radius: 8px;
+	border: 1px solid  #262626;
+	background:  #141414;
+
+	flex-grow: 1;
+	flex-basis: 867px;
+	
+}
+
+.dark-form__bottom {
+	display: flex;
+	justify-content: space-between;
+	gap: 70px;
+	flex-wrap: wrap;
+	
+}
+
+.dark-form__check {
+	flex-grow: 1;
+	display: flex;
+	align-items: center;
+	
+	gap: 10px;
+	transition: 0.35s ease-in-out;
+
+
+}
+
+.checkbox-input {
+	flex-basis: 1px;
+		transition: 0.35s ease-in-out;
+}
+
+/* .checkbox-input::before{
+	content: '';
+	width: 28px;
+	height: 28px;
+	border-radius: 4px;
+	border: 1px solid #262626;
+	background-color:#f8efef;
+} */
+
+.checkbox-lable{
+	font-weight: 400;
+}
+
+
+
+.dark-form__button {
+	color: #FFF;
+		font-style: normal;
+		font-weight: 600;
+		line-height: 150%;
+		padding: 18px 24px;
+		background-color: #e50000;
+		border-radius: 8px;
+		transition: 0.25s ease-in-out;
+}
+
+.dark-form__button:hover,
+.dark-form__button:focus{
+	color: yellow;
+	box-shadow: 0 0 15px lightpink;
+
+}
+
+.dark-form__button:active{
+	transform: scale(0.95);
+}
+
+.dark-form__input:hover,
+.dark-form__input:focus,
+.dark-form__textarea:hover,
+.dark-form__textarea:focus{
+
+	background: 	#ecdbdb;
+	opacity: 0.75;
+	color: #0F0F0F;
+	font-size: 22px;
+	letter-spacing: 2px;
+}
+
+.checkbox-input{
+	appearance: none;
+}
+
+.checkbox-input:focus + .checkbox-lable{
+outline-offset: 7px;
+	outline: dotted 5px whitesmoke;
+}
+
+
+.checkbox-input:checked + .checkbox-lable::before{
+	background: url("../img/green-smile.svg") 0 0 / 100% no-repeat;
+}
+
+
+.checkbox-lable{
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.checkbox-lable::before{
+	content: '';
+	width: 28px;
+	height: 28px;
+	border: 1px dotted whitesmoke;
+}
+
+.subtitle03{
+	font-size: 35px;
+	text-align: center;
+	color: #fff;
+	letter-spacing: 5px;
+		}
+
+.subtitle03--margin{
+	margin-bottom: 25px;
+}
