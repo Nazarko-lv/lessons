@@ -1,0 +1,358 @@
+/* Підключення шрифтів */
+
+/* підключення через сайт  fonts.google.com/*/
+/* manrope regular */
+/* @import url("https://fonts.googleapis.com/css2?family=Manrope&display=swap");
+/* manrope semibold */
+/* @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@600&display=swap");
+/* manrope medium */
+/* @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap");
+/* manrope bold */
+/* @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@700&display=swap");  
+
+/* підключення через плагін GOOGLE в css import */
+@import url("https://fonts.googleapis.com/css?family=Manrope:regular,500,600,700,800&display=swap"); 
+
+@import url("https://fonts.googleapis.com/css?family=Epilogue:100,200,300,regular,500,600,700,800,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Comic+Neue:300,300italic,regular,italic,700,700italic&display=swap");
+
+@import url("https://fonts.googleapis.com/css?family=Rubik+Bubbles:regular&display=swap");
+
+@import url("https://fonts.googleapis.com/css?family=Doto&display=swap");
+
+
+
+/* Підключення шрифтів локально */
+@import url("fonts.css");
+
+/* Скидання стилів */
+@import url("reset.css");
+
+/* Основні стилі */
+body {
+		/* background-color: #141414; */
+	/* background-color: #777; */
+}
+
+
+.wrapper {
+	min-height: 100%;
+	overflow: clip;
+	/* hidden*/
+	display: flex;
+	flex-direction: column;
+}
+
+.wrapper > main {
+	flex-grow: 1;
+	
+}
+
+
+[class*="__container"] {
+	max-width: 1630px;
+	margin: 0 auto;
+	padding-inline: 15px;
+	background-color:  #141414;
+	/* overflow: hidden; */
+}
+
+.main-title{
+	color:  #FFF;
+		font-family: 'Manrope', sans-serif;
+		font-size: 40px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: 150%;
+		text-align: center;
+
+}
+
+
+
+
+.movies {
+	max-width: 100%;
+
+}
+
+.movies__container {
+
+}
+
+.must {
+
+}
+
+.must--margin{
+	margin-bottom: 150px;
+}
+
+.must__container {
+	border-radius: 12px;
+		border: 5px solid #262626;
+margin: 0 auto;
+padding: 50px;
+}
+
+.subtitle-movies-wrap {
+	display: flex;
+justify-content: space-between;
+align-items: center;	
+}
+
+.subtitle-movies-wrap--margin{
+	margin-bottom: 50px;
+}
+
+.subtitle-movies {
+	color: #FFF;
+	font-family: 'Manrope', sans-serif;
+	font-size: 38px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 150%;
+	text-transform: capitalize;
+
+}
+
+.slider {
+	padding: 16px;
+border-radius: 12px;
+border: 1px solid #1F1F1F;
+background-color:#0F0F0F;
+
+	display: inline-flex;
+	align-items: center;
+	gap: 16px;
+}
+
+.arrow {
+
+}
+
+.slider> .arrow:first-child {
+	transform: rotate(180deg);
+}
+
+.slider__points{
+	display: flex;
+	gap: 3px;
+}
+
+.slider__point {
+width: 16px;
+height: 4px;
+	border-radius: 100px;
+	background-color:#333;
+}
+
+
+.slider__point:active{
+border-radius: 100px;
+background-color: #e50000;
+width: 23px;
+height: 4px;
+
+}
+
+
+.must__cadrs {
+	max-width: 1500px;
+	margin: 0 auto;
+
+	display: flex;
+	gap: 20px;
+}
+
+.must__card {
+	padding: 20px;
+	border-radius: 12px;
+	border: 1px solid  #262626;
+	background-color: #1A1A1A;
+
+flex-basis: 360px;
+
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+
+}
+
+/* .must__img-wrap {
+border-radius: 12px;
+
+} */
+
+.image-must {
+	width: 100%;
+	border-radius: 12px;
+	border: 1px solid #000;
+		max-width: 320px;
+	object-fit: cover;
+	aspect-ratio: 320 / 420;
+}
+
+.must__rate {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.must__time {
+padding: 6px 10px 6px 6px;
+border-radius: 51px;
+border: 1px solid  #262626;
+background-color:  #141414;
+
+	display: flex;
+	justify-content: space-between;
+	gap: 2px;
+}
+
+.clock-icon{
+	width: 24px;
+	height: 24px;
+}
+
+.time-text {
+	color:  #999;
+		font-family: 'Manrope', sans-serif;
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 150%;
+		
+}
+
+.must__star {
+	padding: 6px 10px;
+	border-radius: 51px;
+	border: 1px solid #262626;
+	background-color: #141414;
+	display: flex;
+	justify-content: space-between;
+	gap: 2px;
+	align-items: center;
+}
+
+.star-icon{
+	width: 18px;
+	height: 18px;
+}
+.must__star>.star-icon:last-of-type {
+margin-right: 2px;
+}
+
+/* ============== OUR Genres ============== */
+
+.movies-btn{
+	padding: 10px 24px;
+	border-radius: 8px;
+	background-color: #e50000;
+
+	color:  #FFF;
+	text-align: center;
+	font-family: 'Manrope', sans-serif;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 150%;
+	/* transform: translateY(-70px); */
+	position: absolute;
+	top: -20px;
+	z-index: 2;
+
+	
+}
+
+.genres__container{
+	padding: 50px;
+	border-radius: 12px;
+	border: 1px solid#262626;
+	position: relative;	
+	z-index: 1;
+}
+
+.genres__cards {
+	max-width: 1500px;
+	display: flex;
+	justify-content: space-between;
+	gap: 30px;
+	flex-wrap: wrap;
+	
+
+}
+
+.genres__card{
+flex-basis: 276px;
+flex-shrink: 1;
+flex-grow: 0;
+
+padding: 30px;
+border-radius: 12px;
+border: 1px solid  #262626;
+background-color:#1A1A1A;
+
+display: flex;
+flex-direction: column;
+
+}
+.posters-wrap {
+	/* width: 100%; */
+	flex-basis: 215px;
+	display: flex;
+	gap: 5px;
+	flex-wrap:wrap;
+	
+}
+
+.poster {
+max-width:  104px;
+
+}
+
+.genres__label {
+	display: flex;
+	justify-content: space-between;
+	gap: 10px;
+	align-items: 	center;
+	}
+
+/* .label {
+	color: #FFF;
+		font-family: 'Manrope', sans-serif;
+		font-size: 18px;
+		font-style: normal;
+		font-weight: 600;
+		line-height: 150%;
+
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+} */
+
+/* .label::after{
+	content: '';
+	width: 30px;
+	height: 30px;
+	background: url("../img/movies/icon/arrow-icon.svg") 0 0 / 100% no-repeat;
+} */
+
+
+
+.arrow--genres {
+	width: 30px;
+	height: 30px;
+}
+
+
+.label {
+	color: #FFF;
+		font-family: 'Manrope', sans-serif;
+		font-size: 18px;
+		font-style: normal;
+		font-weight: 600;
+		line-height: 150%;
+}
