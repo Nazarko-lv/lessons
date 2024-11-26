@@ -53,7 +53,7 @@ body {
 	max-width: 1630px;
 	margin: 0 auto;
 	padding-inline: 15px;
-	background-color:  #141414;
+
 	/* overflow: hidden; */
 }
 
@@ -72,7 +72,8 @@ body {
 
 
 .movies {
-	max-width: 100%;
+	/* max-width: 100%; */
+	background-color: #141414;
 
 }
 
@@ -178,6 +179,7 @@ flex-basis: 360px;
 	display: flex;
 	flex-direction: column;
 	gap: 20px;
+
 
 }
 
