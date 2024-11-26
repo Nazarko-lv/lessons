@@ -48,6 +48,9 @@ body {
 	
 }
 
+header{
+	background-color: #141414;
+}
 
 [class*="__container"] {
 	max-width: 1630px;
@@ -67,8 +70,6 @@ body {
 		text-align: center;
 
 }
-
-
 
 
 .movies {
@@ -309,11 +310,25 @@ flex-direction: column;
 	display: flex;
 	gap: 5px;
 	flex-wrap:wrap;
-	
+	position: relative;
+
+}
+
+.posters-wrap::before{
+	content: '';
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(0deg, rgba(26, 26, 26, 1) 0%, rgba(26, 26, 26, 0) 100%);
+	position: absolute;
+
+
 }
 
 .poster {
 max-width:  104px;
+aspect-ratio: 104 / 123;
+border-radius: 10px;
+border: 1px solid #000;
 
 }
 
@@ -360,3 +375,15 @@ max-width:  104px;
 		font-weight: 600;
 		line-height: 150%;
 }
+
+
+@media (any-hover: hover) {
+		.movies-btn:hover {
+				box-shadow: 0 0 10px #FFF;
+			}
+		
+			a:hover,
+			.genres__card:hover {
+				box-shadow: 0 0 10px #FFF;
+			}
+	}
