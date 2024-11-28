@@ -439,7 +439,7 @@ overflow: hidden;
 				box-shadow: 0 0 10px #FFF;
 			} */
 
-		.genres__card:hover > .posters-wrap::before{
+		.genres__card:hover > .posters::before{
 			display: none;
 	}
 }
