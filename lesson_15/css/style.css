@@ -200,10 +200,12 @@ height: 4px;
 	display: flex;
 	flex-direction: column;
 	gap: 20px;
-
-
+	/* align-items: center; */
 }
 
+.mast__picture{
+	align-self: center;
+}
 /* .must__img-wrap {
 border-radius: 12px;
 
@@ -222,8 +224,11 @@ border-radius: 12px;
 .must__rate {
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
+	
+	/* align-items: center; */
 	flex-wrap: wrap;
+	gap: 5px;
+
 }
 
 .must__time {
@@ -442,8 +447,7 @@ overflow: hidden;
 
 .movies-btn:active,
 .genres__card:active,
-.must__card:active
-{
+.must__card:active{
 
 	box-shadow: 0 0 10px lightpink;
 }
@@ -462,14 +466,25 @@ overflow: hidden;
 
 @media (max-width: 932px) {
 	.must__card {
-		flex: 0 1 calc(100% / 2 - ((20px * 1) / 2));
+		flex: 1 1 calc(100% / 2 - ((20px * 1) / 2));
 		/* Зменшуємо кількість карток на рядку до 2 для ще меншого екрану */
+		
 	}
-	
-/* +======================================== */
+		/* .must__rate {
+			justify-content: center;
+		}
+		 */
 }
 
+/* @media (max-width: 520px) {
+	.must__rate {
+			justify-content: space-between;
+		}
 
+	} */
+
+
+/* +======================================== */
 
 @media (max-width:1599.98px) {
 	.genres__container{
