@@ -535,9 +535,15 @@ padding-block: 40px 18px;
 	max-width: 92.48%;
 	background-color: #f7cc47;
 	border-radius: 50% 50% 6px 6px / 40.328% 40.328% 6px 6px;
-	margin-left: 7.52%;
+	
 	position: relative;
 	aspect-ratio: 246 / 305;
+}
+
+.designer-wrap--margin {
+	margin-left: 7.518797%;
+	/* 20/266 */
+	margin-bottom: 25px;
 }
 .designer-wrap img{
 	width: 100%;
