@@ -1,0 +1,308 @@
+/* Підключення шрифтів */
+
+/* підключення через сайт  fonts.google.com/*/
+/* manrope regular */
+/* @import url("https://fonts.googleapis.com/css2?family=Manrope&display=swap");
+/* manrope semibold */
+/* @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@600&display=swap");
+/* manrope medium */
+/* @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap");
+/* manrope bold */
+/* @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@700&display=swap");  
+
+/* підключення через плагін GOOGLE в css import */
+
+@import url("https://fonts.googleapis.com/css?family=Epilogue:regular,800,900&display=swap");
+
+/* Підключення шрифтів локально */
+@import url("fonts.css");
+
+/* Скидання стилів */
+@import url("reset.css");
+
+/* Основні стилі */
+body {
+	font-family: "Epilogue", sans-serif;
+	color: #fff;
+
+	background-color: #28293E;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	
+}
+
+
+.wrapper {
+	min-height: 100%;
+	overflow: clip;
+	/* hidden*/
+	display: flex;
+	flex-direction: column;
+}
+
+.wrapper>main {
+	flex-grow: 1;
+
+}
+
+/* ------------------------------- */
+[class*="__container"] {
+	max-width: 1342px;
+	margin: 0 auto;
+	padding-inline: 15px;
+
+	/* overflow: hidden; */
+}
+
+.header__container{
+	text-align: right;
+}
+.main-title {
+	font-size: 40px;
+	font-weight: 700;
+	line-height: 150%;
+	text-align: center;
+
+}
+
+/* ================================= */
+
+@media (any-hover: hover) {
+
+
+	.button:hover{
+		background-color: #fff;
+		color: #28293E;
+	} 
+}
+
+/* ================================= */
+
+.masonry--try-1{
+	height: 1032px;
+	display: grid;
+	grid-template-columns: repeat(4, 304px);
+	grid-template-rows: repeat(auto-fit, minmax(184, 296));
+	grid-auto-flow: column;
+	display: none;
+}
+
+/* .masonry__item:nth-child(1) img,
+.masonry__item:nth-child(3) img,
+.masonry__item:nth-child(6) img,
+.masonry__item:nth-child(14) img,
+.masonry__item:nth-child(15) img{
+	aspect-ratio: 304 / 184;
+	object-fit: contain;
+	width: 100%;
+	
+}
+
+.masonry__item:nth-child(2) img,
+.masonry__item:nth-child(4) img,
+.masonry__item:nth-child(5) img,
+.masonry__item:nth-child(13) img,
+.masonry__item:nth-child(16) img {
+	aspect-ratio: 304 / 296;
+	object-fit: contain;
+	width: 100%;
+	
+	}
+
+
+.masonry__item:nth-child(7) img,
+.masonry__item:nth-child(8) img,
+.masonry__item:nth-child(9) img,
+.masonry__item:nth-child(10) img,
+.masonry__item:nth-child(11) img,
+.masonry__item:nth-child(12) img {
+	aspect-ratio: 304 / 152;
+	object-fit: contain;
+	width: 100%;
+	
+
+}
+
+.masonry__item:nth-child(17) img{
+	aspect-ratio: 304 / 504;
+	object-fit: contain;
+	width: 100%;
+	} */
+
+/* спроба No2. Декілька окремих колонок */
+ 
+.masonry--try-2 {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(304px, 1fr));
+
+	column-gap: 32px;
+	}
+
+.masonry__column-n1{
+display: grid;
+grid-template-rows: 0.19fr 0.31fr 0.19fr 0.31fr ;
+row-gap: 24px;
+align-items: start;
+}
+.masonry__column-n2{
+display: grid;
+grid-template-rows: 0.32fr 0.20fr 0.16fr 0.16fr;
+row-gap: 24px;
+align-items: start;
+}
+.masonry__column-n3{
+	display: grid;
+grid-template-rows: 0.16fr 0.16fr 0.16fr 0.32fr 0.2fr;
+row-gap: 24px;
+align-items: start;
+}
+.masonry__column-n4{
+display: grid;
+grid-template-rows: 0.19fr 0.30fr 0.51fr;
+row-gap: 24px;
+align-items: start;
+} 
+
+/*  алгоритми для наявної сітки */
+
+/* .masonry__column-n2 .masonry__item:nth-child(3) img,
+.masonry__column-n2 .masonry__item:nth-child(4) img,
+.masonry__column-n2 .masonry__item.masonry__item:nth-child(5) img,
+.masonry__column-n3 .masonry__item.masonry__item:nth-child(1) img,
+.masonry__column-n3 .masonry__item.masonry__item:nth-child(2) img,
+.masonry__column-n3 .masonry__item.masonry__item:nth-child(3) img
+{
+aspect-ratio: 304 / 152;
+object-fit: cover;
+width: 100%;
+border-radius: 8.22% 8.22% 8.22% 8.22% / 16.45% 16.45% 16.45% 16.45%;
+}
+
+
+.masonry__column-n1 .masonry__item:nth-child(1) img,
+.masonry__column-n1 .masonry__item:nth-child(3) img,
+.masonry__column-n2 .masonry__item:nth-child(2) img,
+.masonry__column-n3 .masonry__item:nth-child(5) img,
+.masonry__column-n4 .masonry__item:nth-child(1) img
+{
+	aspect-ratio: 304 / 184;
+	object-fit: cover;
+	width: 100%;
+	border-radius: 8.22% 8.22% 8.22% 8.22% / 13.59% 13.59% 13.59% 13.59%;
+}
+
+.masonry__column-n1 .masonry__item:nth-child(2) img,
+.masonry__column-n1 .masonry__item:nth-child(4) img,
+.masonry__column-n2 .masonry__item:nth-child(1) img,
+.masonry__column-n3 .masonry__item:nth-child(4) img,
+.masonry__column-n4 .masonry__item:nth-child(2) img{
+	aspect-ratio: 304 / 296;
+	object-fit: cover;
+	width: 100%;
+	border-radius: 8.22% 8.22% 8.22% 8.22% / 8.45% 8.45% 8.45% 8.45%;
+} */
+
+/* ============ */
+
+/* ============ */
+/* спроба три з іншими алгоритмами */
+/* .masonry--try-2 {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(304px, 1fr));
+
+	column-gap: 32px;
+}
+
+.masonry__column-n1 {
+	display: grid;
+	
+	grid-template-rows: 184px 296px 184px 296px;
+	row-gap: 24px;
+	align-items: start;
+}
+
+.masonry__column-n2 {
+	display: grid;
+	
+	grid-template-rows: 296px 184px 152px 152px 152px;
+	row-gap: 24px;
+	align-items: start;
+}
+
+.masonry__column-n3 {
+	display: grid;
+	
+	grid-template-rows: 152px 152px 152px 296px 184px;
+	row-gap: 24px;
+	align-items: start;
+}
+
+.masonry__column-n4 {
+	display: grid;
+
+	grid-template-rows: 184px 296px 504px;
+	row-gap: 24px;
+	align-items: start;
+} */
+
+.masonry__column-n2 .masonry__item:nth-child(5n+3) img,
+.masonry__column-n2 .masonry__item:nth-child(5n+4) img,
+.masonry__column-n2 .masonry__item.masonry__item:nth-child(5n+5) img,
+.masonry__column-n3 .masonry__item.masonry__item:nth-child(5n+1) img,
+.masonry__column-n3 .masonry__item.masonry__item:nth-child(5n+2) img,
+.masonry__column-n3 .masonry__item.masonry__item:nth-child(5n+3) img {
+	aspect-ratio: 304 / 152;
+	object-fit: cover;
+	width: 100%;
+	border-radius: 8.22% 8.22% 8.22% 8.22% / 16.45% 16.45% 16.45% 16.45%;
+}
+
+
+.masonry__column-n1 .masonry__item:nth-child(4n+1) img,
+.masonry__column-n1 .masonry__item:nth-child(4n+3) img,
+.masonry__column-n2 .masonry__item:nth-child(5n+2) img,
+.masonry__column-n3 .masonry__item:nth-child(5n+5) img,
+.masonry__column-n4 .masonry__item:nth-child(3n+1) img {
+	aspect-ratio: 304 / 184;
+	object-fit: cover;
+	width: 100%;
+	border-radius: 8.22% 8.22% 8.22% 8.22% / 13.59% 13.59% 13.59% 13.59%;
+}
+
+.masonry__column-n1 .masonry__item:nth-child(4n+2) img,
+.masonry__column-n1 .masonry__item:nth-child(4n+4) img,
+.masonry__column-n2 .masonry__item:nth-child(5n+1) img,
+.masonry__column-n3 .masonry__item:nth-child(5n+4) img,
+.masonry__column-n4 .masonry__item:nth-child(3n+2) img {
+	aspect-ratio: 304 / 296;
+	object-fit: cover;
+	width: 100%;
+	border-radius: 8.22% 8.22% 8.22% 8.22% / 8.45% 8.45% 8.45% 8.45%;
+}
+
+
+.masonry__column-n4 .masonry__item:nth-of-type(3n+3) img{
+	aspect-ratio: 304 / 504;
+	object-fit: cover;
+	width: 100%;
+	border-radius: 8.22% 8.22% 8.22% 8.22% / 4.96% 4.96% 4.96% 4.96%;
+}
+/* ====колонка No2 */
+/* .masonry__column-n2 img:nth-child(1){
+	aspect-ratio: 304 / 296;
+	object-fit: contain;
+}
+
+.masonry__column-n2 img:nth-child(2) {
+	aspect-ratio: 304 / 184;
+	object-fit: contain;
+}
+
+.masonry__column-n2 img:nth-child(3),
+.masonry__column-n2 img:nth-child(4) {
+	aspect-ratio: 304 / 152;
+	object-fit: contain;
+} */
+
+/* ============== */
