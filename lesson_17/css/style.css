@@ -171,6 +171,7 @@ position: relative;
 	display: flex;
 	gap: 30px;
 	flex-wrap: wrap;
+	justify-content: space-between;
 }
 
 .work__cards:not(:last-child){
@@ -283,6 +284,10 @@ position: relative;
 	
 }
 
+/* .button:hover{
+	background-color: #fff;
+	color: #28293E;
+} */
 
 @media (max-width: 1100px){
 	.cards{
@@ -292,24 +297,24 @@ position: relative;
 
 @media (max-width: 955px) {
 	.cards__item {
-		flex-basis: 48%;
+		flex-basis: 49%;
 	}
 	
 	.cards__item:nth-child(4n+2),
 	.cards__item:nth-child(4n+3) {
-		flex-basis: 48%;
+		flex-basis: 49%;
 			aspect-ratio: 470 / 416;
 	
 		}
 	}
-@media (max-width: 716px) {
+@media (max-width: 778px) {
 	.cards__item {
-	flex-basis: 98%;
+	flex-basis: 100%;
 	}
 		
 	.cards__item:nth-child(4n+2),
 	.cards__item:nth-child(4n+3) {
-	flex-basis: 98%;
+	flex-basis: 100%;
 	}
 	.tabs {
 		gap: 25px;
@@ -398,11 +403,11 @@ position: relative;
 	object-fit: contain; */
 }
 
-.grid-image-wrap{
+/* .grid-image-wrap{
 	max-width: 100%;
 	height: 100%;
 
-}
+} */
 
 .grid-cards__item img{
 	width: 100%;
@@ -627,6 +632,32 @@ transform: scale(0);
 	transition: 0.35s;
 	}
 
+	.page-link::before{
+		content: "";
+		width: 50px;
+		height: 50px;
+		background: url("../img/finger-up.svg") 0 0 / contain no-repeat;
+			transform: rotate(90deg) translate(50%);
+		margin-inline-end: 10px;
+		animation: puls 2s ease-in-out 0s infinite alternate forwards;
+	
+	}
+
+	@keyframes puls {
+		/* 0%{
+			transform:scale(0.75) ;
+		}
+		100%{
+			transform: scale(1.2);
+		} */
+	/* 0% {
+		transform:skew(1);
+		 }
+		 */
+	100% {
+			transform: scale(1.2);
+			 }
+	}
 /* =============================== */
 
 
@@ -709,6 +740,7 @@ align-items: end;
 	position: relative;
 	display: grid;
 	gap: 24px;
+	z-index: 3;
 }
 
 .charts__item::before{
@@ -830,8 +862,7 @@ align-items: end;
 	}
 
 	.button:hover{
-	background-color: #fff;
-	color: #28293E;
+		background-color: #fff;
+		color: #28293E;
 	} 
-
 }
