@@ -83,7 +83,7 @@ body {
 	height: 1032px;
 	display: grid;
 	grid-template-columns: repeat(4, 304px);
-	grid-template-rows: repeat(auto-fit, minmax(184, 296));
+	grid-template-rows: repeat(auto-fit, minmax(184px, 296px));
 	grid-auto-flow: column;
 	display: none;
 }
@@ -131,12 +131,14 @@ body {
 	} */
 
 /* спроба No2. Декілька окремих колонок */
- 
+
 .masonry--try-2 {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(304px, 1fr));
 
 	column-gap: 32px;
+	row-gap: 24px;
+	display: none;
 	}
 
 .masonry__column-n1{
@@ -206,7 +208,7 @@ border-radius: 8.22% 8.22% 8.22% 8.22% / 16.45% 16.45% 16.45% 16.45%;
 /* ============ */
 
 /* ============ */
-/* спроба три з іншими алгоритмами */
+/* спроба два з іншими алгоритмами */
 /* .masonry--try-2 {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(304px, 1fr));
@@ -245,6 +247,8 @@ border-radius: 8.22% 8.22% 8.22% 8.22% / 16.45% 16.45% 16.45% 16.45%;
 	row-gap: 24px;
 	align-items: start;
 } */
+
+/* Спроба два за допомогою Алгоритми через N */
 
 .masonry__column-n2 .masonry__item:nth-child(5n+3) img,
 .masonry__column-n2 .masonry__item:nth-child(5n+4) img,
@@ -288,6 +292,10 @@ border-radius: 8.22% 8.22% 8.22% 8.22% / 16.45% 16.45% 16.45% 16.45%;
 	width: 100%;
 	border-radius: 8.22% 8.22% 8.22% 8.22% / 4.96% 4.96% 4.96% 4.96%;
 }
+
+/* ==========Кінець алгоритмів через N=========== */
+
+
 /* ====колонка No2 */
 /* .masonry__column-n2 img:nth-child(1){
 	aspect-ratio: 304 / 296;
@@ -306,3 +314,226 @@ border-radius: 8.22% 8.22% 8.22% 8.22% / 16.45% 16.45% 16.45% 16.45%;
 } */
 
 /* ============== */
+
+
+/* ===================== */
+/* Стилі для masonry--try-3  */
+
+.masonry--try-3{
+	display: grid;
+	grid-template-columns: repeat(4, 304px );
+	grid-template-rows: 152px 8px 88px 8px 152px 152px 8px 88px 8px 152px ;
+
+	grid-auto-flow: column;
+	display: none;
+}
+/* картки з висотою 184px */
+.masonry--try-3 img:nth-child(1),
+.masonry--try-3 img:nth-child(3),
+.masonry--try-3 img:nth-child(6),
+.masonry--try-3 img:nth-child(14),
+.masonry--try-3 img:nth-child(15){
+	grid-row: 2;
+	aspect-ratio: 304 / 184;
+	object-fit: cover;
+	width: 100%;
+}
+
+/* картки з висотою 296px */
+.masonry--try-3 img:nth-child(2),
+.masonry--try-3 img:nth-child(4),
+.masonry--try-3 img:nth-child(5),
+.masonry--try-3 img:nth-child(13),
+.masonry--try-3 img:nth-child(16) {
+	grid-row: 3;
+	aspect-ratio: 304 / 296;
+	object-fit: cover;
+	width: 100%;
+	}
+
+/* картки з висотою 152px */
+.masonry--try-3 img:nth-child(7),
+.masonry--try-3 img:nth-child(8),
+.masonry--try-3 img:nth-child(9),
+.masonry--try-3 img:nth-child(10),
+.masonry--try-3 img:nth-child(11),
+.masonry--try-3 img:nth-child(12) {
+	grid-row: 1;
+	aspect-ratio: 304 / 152;
+	object-fit: cover;
+	width: 100%;
+}
+
+/* картка з висотою 504px */
+.masonry--try-3 img:nth-child(17){
+	grid-row: 5;
+	aspect-ratio: 304 / 504;
+		object-fit: cover;
+		width: 100%;
+}
+
+/* Спроба №4 */
+.masonry--try-4 {
+	display: grid;
+	grid-template-columns: repeat(4, 304px);
+	grid-template-rows: 152px 8px 88px 8px 152px 152px 8px 88px 8px 152px;
+	column-gap: 32px;
+	row-gap: 24px;
+	grid-auto-flow: column;
+	display: none;
+
+}
+/* картки з висотою 184px */
+.masonry--try-4 img:nth-child(17n+1),
+.masonry--try-4 img:nth-child(17n+3),
+.masonry--try-4 img:nth-child(17n+6),
+.masonry--try-4 img:nth-child(17n+14),
+.masonry--try-4 img:nth-child(17n+15) {
+	grid-row: span 2;
+	aspect-ratio: 304 / 184;
+	object-fit: cover;
+	width: 100%;
+}
+
+/* картки з висотою 296px */
+.masonry--try-4 img:nth-child(17n+2),
+.masonry--try-4 img:nth-child(17n+4),
+.masonry--try-4 img:nth-child(17n+5),
+.masonry--try-4 img:nth-child(17n+13),
+.masonry--try-4 img:nth-child(17n+16) {
+	grid-row: span 3;
+	aspect-ratio: 304 / 296;
+	object-fit: cover;
+	width: 100%;
+}
+
+/* картки з висотою 152px */
+.masonry--try-4 img:nth-child(17n+7),
+.masonry--try-4 img:nth-child(17n+9),
+.masonry--try-4 img:nth-child(17n+10),
+.masonry--try-4 img:nth-child(17n+12){
+	grid-row: span 1;
+	aspect-ratio: 304 / 152;
+	object-fit: cover;
+	width: 100%;
+}
+
+.masonry--try-4 img:nth-child(17n+8),
+.masonry--try-4 img:nth-child(17n+11){
+	grid-row: span 3;
+	aspect-ratio: 304 / 152;
+	object-fit: cover;
+	width: 100%;
+}
+
+/* картка з висотою 504px */
+.masonry--try-4 img:nth-child(17n+17) {
+	grid-row: span 5;
+	aspect-ratio: 304 / 504;
+	object-fit: cover;
+	width: 100%;
+}
+/* ================================== */
+
+
+.masonry--try-5 {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(304px, 1fr));
+	grid-template-rows: 152px 8px 88px 8px 152px 152px 8px 88px 8px 152px;
+	column-gap: 32px;
+	row-gap: 24px;
+	
+}
+
+.masonry--try-5 img:nth-child(17n+1),
+.masonry--try-5 img:nth-child(17n+4),
+.masonry--try-5 img:nth-child(17n+8),
+.masonry--try-5 img:nth-child(17n+10),
+.masonry--try-5 img:nth-child(17n+16){
+	grid-row: span 2;
+	aspect-ratio: 304 / 184;
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+	
+}
+
+
+.masonry--try-5 img:nth-child(17n+2),
+.masonry--try-5 img:nth-child(17n+6),
+.masonry--try-5 img:nth-child(17n+7),
+.masonry--try-5 img:nth-child(17n+12),
+.masonry--try-5 img:nth-child(17n+15){
+	grid-row: span 3;
+	aspect-ratio: 304 / 296;
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+
+
+
+.masonry--try-5 img:nth-child(17n+3),
+.masonry--try-5 img:nth-child(17n+9),
+.masonry--try-5 img:nth-child(17n+11),
+.masonry--try-5 img:nth-child(17n+17) {
+	aspect-ratio: 304 / 152;
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+.masonry--try-5 img:nth-child(17n+5),
+.masonry--try-5 img:nth-child(17n+14){
+	grid-row: span 3;
+	aspect-ratio: 304 / 152;
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+
+
+.masonry--try-5 img:nth-child(17n+13){
+	grid-row: span 5;
+	aspect-ratio: 304 / 504;
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+
+
+@media (max-width:1341.98px){
+	.masonry--try-5{
+		column-gap: 20px;
+	}
+}
+
+@media (max-width:1305px) {
+	.masonry--try-5 {
+	
+	grid-template-rows: 204px;
+	grid-template-rows: repeat(auto-fill, minmax(152px, 1fr));
+}
+
+}
+
+.header__links {
+
+	padding-block: 20px;
+	display: flex;
+	justify-content: center;
+	gap: 50px;
+
+
+}
+
+.header__links a {
+	transition: 0.35s;
+	text-decoration: underline;
+}
+
+.header__links a:hover {
+	text-decoration: underline;
+	text-decoration-color: greenyellow;
+	text-decoration-thickness: 3px;
+	text-shadow: 2px 2px 5px #09113360;
+}
