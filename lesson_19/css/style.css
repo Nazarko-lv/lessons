@@ -1,0 +1,225 @@
+/* Підключення шрифтів */
+
+/* підключення через сайт  fonts.google.com/*/
+/* manrope regular */
+/* @import url("https://fonts.googleapis.com/css2?family=Manrope&display=swap");
+/* manrope semibold */
+/* @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@600&display=swap");
+/* manrope medium */
+/* @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap");
+/* manrope bold */
+/* @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@700&display=swap");  
+
+/* підключення через плагін GOOGLE в css import */
+
+@import url("https://fonts.googleapis.com/css?family=Epilogue:regular,800,900&display=swap");
+
+/* Підключення шрифтів локально */
+@import url("fonts.css");
+
+/* Скидання стилів */
+@import url("reset.css");
+
+/* Основні стилі */
+body {
+	font-family: "Epilogue", sans-serif;
+	color: #fff;
+
+	background-color: #28293E;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	
+}
+
+
+.wrapper {
+	min-height: 100%;
+	overflow: clip;
+	/* hidden*/
+	display: flex;
+	flex-direction: column;
+}
+
+.wrapper>main {
+	flex-grow: 1;
+
+}
+
+/* ------------------------------- */
+[class*="__container"] {
+	max-width: 1342px;
+	margin: 0 auto;
+	padding-inline: 15px;
+
+	/* overflow: hidden; */
+}
+
+.header__container *{
+	margin-block-end: 10px;
+
+}
+.hw-title {
+	font-size: 40px;
+	font-weight: 700;
+	line-height: 150%;
+	text-align: center;
+
+}
+
+/* ================================= */
+
+@media (any-hover: hover) {
+
+
+	.button:hover{
+		background-color: #fff;
+		color: #28293E;
+	} 
+}
+
+/* ================================= */
+.header__links{
+	font-size: 20px;
+	color: #e4e28e;
+	font-weight: 700;
+	line-height: normal;
+	text-transform: uppercase;
+	/* display: flex;
+	gap: 35px;
+	justify-content: center; */
+
+}
+
+
+/* .link-hw::before{
+	content: url("../img/hand-finger.svg");
+	width: 100%;
+	height: 100%;
+
+} */
+.header__links{
+	display: flex;
+	gap: 50px;
+	justify-content: center;
+}
+.link-hw:first-child::before{
+	content: "";
+	width: 40px;
+	height: 31px;
+	background: url("../img/hand-finger.svg") 0 0 / contain no-repeat;
+position: relative;
+top: 15px;
+margin-inline-end:10px ;
+}
+.link-hw:last-child::after{
+	
+	content: "";
+	width: 40px;
+	height: 31px;
+	background: url("../img/hand-finger.svg") 0 0 / contain no-repeat;
+	position: relative;
+	top: 15px;
+	margin-inline-start: 10px;
+	transform:  rotateY(180deg) ;
+
+}
+
+.header__links a:hover {
+	text-decoration: underline;
+	text-decoration-color: greenyellow;
+	text-decoration-thickness: 3px;
+	}
+.header__logo{
+	width: 104px;
+}
+/* ================================= */
+.hero-section{
+	padding-block: 25px;
+}
+
+.hero-cards__item{
+	margin-block-end: 20px;
+}
+
+.events__cards *{
+margin-block: 10px;
+}
+.card-ev{
+
+	border: 2px solid rebeccapurple ;
+	inline-size: 370px;
+}
+
+.card-ev *{
+	margin-block-end: 10px;
+}
+
+.feedbacks{
+	padding-block: 15px;
+}
+.fdback__item{
+	inline-size: 586px;;
+	border: #07b310 2px dotted;
+}
+
+.footer__top >*{
+	margin-block-end: 15px;
+}
+
+.footer__menu{
+	border: #e4e28e dotted 2px;
+	inline-size: 100px;
+}
+
+.footer__title-menu{
+	color: #EF6D58 ;
+}
+/* .social__item,
+.social__item a{
+	width: 48px;
+	height: 48px;
+	background-color: #EF6D58 ;
+	border-radius: 50%;
+	text-align: center;
+	vertical-align: middle;
+	
+} */
+/* .social__item *{
+	display: inline;
+	transform-origin: center;
+	transform: translateY(100%);
+} */
+/* .social__item img {
+	display: inline;
+	vertical-align: middle;
+
+} */
+.social__item {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 48px;
+	height: 48px;
+	background-color: #EF6D58;
+	border-radius: 50%;
+		margin-block: 5px;
+}
+.social__item img{
+	max-width: 100%;
+
+}
+.footer__down *{
+	margin: 10px;
+}
+
+.icon-wrap{
+	background-color: #EF6c57;
+	width: 112px;
+	height: 112px;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
