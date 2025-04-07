@@ -30,7 +30,7 @@ body {
 	color: #556070;
 	font-style: normal;
 	font-weight: 400;
-	
+
 	
 }
 
@@ -58,10 +58,6 @@ body {
 }
 
 
-.header__container{
-	position: sticky;
-	position: fixed;
-}
 
 .hw-title {
 	font-size: 1.875rem;
@@ -151,17 +147,32 @@ background:  #FFF;
 	/* height: 100svh; */
 	font-size: clamp(1.25rem, 5vw, 48px)	;
 }
+
 header{
-	padding-block: 1.25rem;
+	padding-block-end: 1.25rem;
+	background-color: #FFF;
+	position: relative;
+	z-index: 10;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: #fff;
+	width: 100%;
+		
+	border-bottom: #A53DFF 2px solid;
+
+	
+	
 }
+
 .header__container{
 	display: flex;
 	justify-content: space-between;
 	align-items: baseline; 
 	gap: 3rem;
-	position: sticky;
+	
 	flex-wrap: wrap;
-
+	position: sticky;
 }
 
 .header__logo{
@@ -197,6 +208,8 @@ header{
 	align-items: center;	
 	
 }
+
+
 
 .header__menu{
 justify-items: flex-end;
@@ -245,8 +258,8 @@ main{
 /* =============== hero=============== */
 .hero {
 background: url("../img/bg-main.svg") 0 0 / cover no-repeat;
-	padding-block: 7.875rem 6.9375rem;
-
+	/* padding-block: 126px 6.9375rem; */
+	padding-block: 226px 6.9375rem;
 }
 
 .hero__container {
@@ -1520,6 +1533,17 @@ top: -3.75rem;
 }
 
 /* === header ===*/
+.hw-title {
+	display: none;
+		}
+header{
+	padding: 0;
+}
+	.header+.header__container{
+		padding-bottom: 0.5rem;
+	}	
+
+
 
 
 		/* === hero == */
@@ -1571,11 +1595,15 @@ top: -3.75rem;
 	gap: 1rem;
 }
 }
+
+/* ============================================== */
 @media (max-width: 1024px) {
 .header__menu {
 		justify-items: center;
 	}
 }
+
+/* ============================================== */
 
 @media (max-width: 991.98px) {
 	[class*="__container"] {
@@ -1584,7 +1612,9 @@ top: -3.75rem;
 
 
 	/* === header === */
-
+		.header>.header__container{
+			padding-block: 0.5rem;
+		}
 	
 	
 	/* === hero == */
@@ -1685,6 +1715,7 @@ max-inline-size: 100%;
 	.header__container{
 		gap: 1.25rem;
 	}
+
 	/* === hero == */
 	.main-title{
 		font-size: 2rem;
@@ -1771,19 +1802,23 @@ margin-inline: auto;
 	}
 
 	.header .logo__title {
-		flex-direction: column;
+		/* flex-direction: column;
 		gap: 0;
+		 */
+	/* display: none; */
+		}
 		
-	}
-.logo__title{
-	gap: 0.5rem;
 
-
-}
-	.logo__title::before {
+.logo__title::before {
 		flex: 0 0 2.5rem;
-
-	}
+}
+.logo > .logo__title{
+	visibility: hidden;
+	margin-inline-end: -5rem;
+}
+.logo>.logo__title::before {
+	visibility: visible;
+}
 
 	.header__btn{
 		padding: 0.5rem;
@@ -1856,9 +1891,7 @@ margin-inline: auto;
 
 /* menu burger */
 @media (max-width: 991.98px) {
-	.hw-title{
-		display: none;
-	}
+
 
 	.header__logo	.logo__title{
 		padding-inline-end: 0;
