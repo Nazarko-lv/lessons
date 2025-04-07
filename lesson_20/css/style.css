@@ -1621,6 +1621,10 @@ header{
 	.hero{
 		padding-block: 2rem;
 	}
+
+	.hero>.hero__container{
+		padding-block-start: 4.5rem;
+	}
 	.hero__describe{
 		flex: 1 0 100%;
 	}
@@ -1632,6 +1636,7 @@ header{
 			margin-block-end: 3em;
 			
 }
+
 
 /* === about === */
 
@@ -1812,11 +1817,11 @@ margin-inline: auto;
 .logo__title::before {
 		flex: 0 0 2.5rem;
 }
-.logo > .logo__title{
+.header__logo > .logo__title{
 	visibility: hidden;
 	margin-inline-end: -5rem;
 }
-.logo>.logo__title::before {
+.header__logo>.logo__title::before {
 	visibility: visible;
 }
 
