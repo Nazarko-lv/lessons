@@ -1531,7 +1531,7 @@ top: -3.75rem;
 }
 }
 /* ============= адаптив  =============*/
-@media (max-width: 1199.98px) {
+@media (max-width: 74.998em) {
 [class*="__container"] {
 	padding-block: 2rem;
 }
@@ -1601,7 +1601,7 @@ header{
 }
 
 /* ============================================== */
-@media (max-width: 1024px) {
+@media (max-width: 64em) {
 .header__menu {
 		justify-items: center;
 	}
@@ -1609,7 +1609,7 @@ header{
 
 /* ============================================== */
 
-@media (max-width: 991.98px) {
+@media (max-width: 61.9988rem) {
 	[class*="__container"] {
 		padding-block: 1.5rem;
 		}
@@ -1725,7 +1725,7 @@ max-inline-size: 100%;
 
 
 /* ====== */
-@media (max-width: 767.98px) {
+@media (max-width: 47.9988em) {
 	.header__container{
 		gap: 1.25rem;
 	}
@@ -1800,7 +1800,7 @@ margin-inline: auto;
 
 
 
-@media (max-width: 479.98px) {
+@media (max-width: 29.9988em) {
 
 	[class*="__title"] {
 		font-size: 1.5rem;
@@ -1906,7 +1906,7 @@ margin-inline: auto;
 }
 
 /* menu burger */
-@media (max-width: 991.98px) {
+@media (max-width: 61.9988em)) {
 
 
 	.header__logo	.logo__title{
