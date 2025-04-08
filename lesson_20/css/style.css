@@ -2012,6 +2012,7 @@ input[type="number"] {
 		inset-inline-start: 100%;
 		inset-block-start: 0;
 /* 		inline-size: 100%; */
+inline-size:60%;
 		block-size: 100%;
 		z-index: 2;
 	
@@ -2053,7 +2054,7 @@ input[type="number"] {
 	.open-menu .menu__body,
 	.open-menu .menu__body::before {
 		inset-inline-start: 0;
-		inset-inline-start: 60%;
+		inset-inline-start: 40%;
 		background-color: #28293E;
 		/* inline-size: 60%; */
 		/* inset-inline-start: 0; робимо це значення 100%, щоб меню виїжджало з правої сторони */
