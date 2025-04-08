@@ -139,7 +139,7 @@ background:  #FFF;
 		transform: skew(-10deg) scale(1.2);
 	}
 
-	.button.dwn-icon:hover:before {
+	.button.dwn-icon:hover::before {
 		transform: (1.2);
 	}
 }
@@ -1906,7 +1906,7 @@ margin-inline: auto;
 }
 
 /* menu burger */
-@media (max-width: 61.9988em)) {
+@media (max-width: 61.9988em) {
 
 
 	.header__logo	.logo__title{
