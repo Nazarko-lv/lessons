@@ -675,7 +675,7 @@ background-color: #A53DFF;
 
 .cards-portolio__item {
 	color: #556070;
-	font-size: 0.875;
+	font-size: 0.875rem;
 	line-height: 1.43em;
 	text-align: left;
 	
@@ -1407,7 +1407,7 @@ input[type="number"] {
 
 .form__input:focus ~ .form__label,
 .form__input:not(:placeholder-shown) ~ .form__label{
-	inset-block-start: -1.125;
+	inset-block-start: -1.125rem;
 	font-size: 1rem;
 	color:#A53DFF;
 }
@@ -2008,9 +2008,6 @@ margin-inline: auto;
 }
 
 
-
-
-}
 
 a:active, button:active{
 	text-shadow: 0 0 5px rgba(255, 145, 0, 0.884);
