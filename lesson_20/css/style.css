@@ -140,7 +140,7 @@ background:  #FFF;
 	}
 
 	.button.dwn-icon:hover::before {
-		transform: (1.2);
+		transform: scale(1.2);
 	}
 }
 
